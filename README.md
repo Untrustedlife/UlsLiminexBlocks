@@ -1,2 +1,2 @@
 # UlsLiminexBlocks
-A mod that adds several new liminal/backroomsy blocks for the Z-Liminex Modpack.
+A mod specifically designed for my Z-Liminex modpack, created to streamline the process of adding eerie, atmospheric blocks for building liminal spaces and modern city structures (without relying solely on KubeJS). Plus, it makes these blocks available for others to use! This mod really shines when paired with Lost Cities, as I've ensured that all the blocks are fully compatible, allowing for even more surreal and unusual cityscapes.
