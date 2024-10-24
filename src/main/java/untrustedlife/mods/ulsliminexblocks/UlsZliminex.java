@@ -25,7 +25,7 @@ public class UlsZliminex {
     
     public UlsZliminex() {
         // Register the setup method for modloading
-        LOGGER.info("MinecraftSweepingDetail loaded.");
+        LOGGER.info("ulsliminexblocks loaded.");
          IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
          bus.addListener(this::onSetupEvent);
          
