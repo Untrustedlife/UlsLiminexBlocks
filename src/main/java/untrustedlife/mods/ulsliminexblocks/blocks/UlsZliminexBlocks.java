@@ -1,6 +1,8 @@
 package untrustedlife.mods.ulsliminexblocks.blocks;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.material.Material;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,7 +18,7 @@ public class UlsZliminexBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, UlsZliminex.MODID);
 
     public static final RegistryObject<Block> POOL_TILE = BLOCKS.register("pooltile", 
-        () -> new BaseBlock("Pool Tiles"));
+        () -> new BaseBlock("Pool Tiles", Material.STONE, SoundType.STONE));
     public static final RegistryObject<Item> POOL_TILE_ITEM = UlsZliminexItems.ITEMS.register("pooltile", 
         () -> new BlockItem(POOL_TILE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
