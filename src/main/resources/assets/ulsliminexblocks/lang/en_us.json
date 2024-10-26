@@ -2,5 +2,11 @@
     "itemGroup.liminextab": "Uls Liminex Blocks",
     "block.ulsliminexblocks.pooltile":"Pool Tiles",
     "block.ulsliminexblocks.pooltile_stairs":"Pool Stairs",
-    "block.ulsliminexblocks.pooltile_slab":"Pool Slab"
+    "block.ulsliminexblocks.pooltile_slab":"Pool Slab",
+    "block.ulsliminexblocks.yellow_wallpaper":"Noderooms Wallpaper",
+    "block.ulsliminexblocks.yellow_wallpaper_stairs":"Noderooms Stairs",
+    "block.ulsliminexblocks.yellow_wallpaper_slab":"Noderooms Slab",
+    "block.ulsliminexblocks.moist_carpet":"Moist Carpet",
+    "block.ulsliminexblocks.moist_carpet_stairs":"Moist Carpet",
+    "block.ulsliminexblocks.moist_carpet_slab":"Moist Carpet"
 }

@@ -18,6 +18,7 @@ public class UlsZliminexBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, UlsZliminex.MODID);
 
     // Standard stone strength: 1.5 hardness, 6 resistance
+    //Pool Tiles
     public static final RegistryObject<Block> POOL_TILE = BLOCKS.register("pooltile", 
         () -> new BaseBlock("Pool Tiles", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
     public static final RegistryObject<Item> POOL_TILE_ITEM = UlsZliminexItems.ITEMS.register("pooltile", 
@@ -33,7 +34,8 @@ public class UlsZliminexBlocks {
     public static final RegistryObject<Item> POOL_TILE_SLAB_ITEM = UlsZliminexItems.ITEMS.register("pooltile_slab", 
         () -> new BlockItem(POOL_TILE_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
-        public static final RegistryObject<Block> YELLOW_WALLPAPER = BLOCKS.register("yellow_wallpaper", 
+    //Yellow Wallpaper
+    public static final RegistryObject<Block> YELLOW_WALLPAPER = BLOCKS.register("yellow_wallpaper", 
         () -> new BaseBlock("Yellow Wallpaper",  Material.WOOD, SoundType.CALCITE, 2f, 3.5f));
     public static final RegistryObject<Item> YELLOW_WALLPAPER_ITEM = UlsZliminexItems.ITEMS.register("yellow_wallpaper", 
         () -> new BlockItem(YELLOW_WALLPAPER.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
@@ -47,7 +49,23 @@ public class UlsZliminexBlocks {
         () -> new BaseSlab("Yellow Wallpaper Slab", Material.WOOD, SoundType.CALCITE, 2f, 3.5f));
     public static final RegistryObject<Item> YELLOW_WALLPAPER_SLAB_ITEM = UlsZliminexItems.ITEMS.register("yellow_wallpaper_slab", 
         () -> new BlockItem(YELLOW_WALLPAPER_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
-        
+    
+
+    //Moist Carpet
+    public static final RegistryObject<Block> MOIST_CARPET = BLOCKS.register("moist_carpet", 
+        () -> new BaseBlock("Moist Carpet",  Material.WOOL, SoundType.MUD, 0.9f, 0.9f));
+    public static final RegistryObject<Item> MOIST_CARPET_ITEM = UlsZliminexItems.ITEMS.register("moist_carpet", 
+        () -> new BlockItem(MOIST_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> MOIST_CARPET_STAIRS = BLOCKS.register("moist_carpet_stairs", 
+        () -> new BaseStairs(() -> MOIST_CARPET.get().defaultBlockState(),"Moist Carpet Stairs",  Material.WOOL, SoundType.MUD, 0.9f, 0.9f));
+    public static final RegistryObject<Item> MOIST_CARPET_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("moist_carpet_stairs", 
+        () -> new BlockItem(MOIST_CARPET_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> MOIST_CARPET_SLAB = BLOCKS.register("moist_carpet_slab", 
+        () -> new BaseSlab("Moist Carpet Slab", Material.WOOL, SoundType.MUD, 0.9f, 0.9f));
+    public static final RegistryObject<Item> MOIST_CARPET_SLAB_ITEM = UlsZliminexItems.ITEMS.register("moist_carpet_slab", 
+        () -> new BlockItem(MOIST_CARPET_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
     // Register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
