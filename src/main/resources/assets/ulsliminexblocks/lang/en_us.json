@@ -1,4 +1,6 @@
 {
     "itemGroup.liminextab": "Uls Liminex Blocks",
-    "block.ulsliminexblocks.pooltile":"Pool Tiles"
+    "block.ulsliminexblocks.pooltile":"Pool Tiles",
+    "block.ulsliminexblocks.pooltile_stairs":"Pool Stairs",
+    "block.ulsliminexblocks.pooltile_slab":"Pool Slab"
 }

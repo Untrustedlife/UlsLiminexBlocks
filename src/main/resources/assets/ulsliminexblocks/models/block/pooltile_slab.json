@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "ulsliminexblocks:block/pooltile",
+    "side": "ulsliminexblocks:block/pooltile",
+    "top": "ulsliminexblocks:block/pooltile"
+  }
+}
