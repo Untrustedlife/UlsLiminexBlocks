@@ -14,6 +14,9 @@
     "block.ulsliminexblocks.false_sky_slab":"False Sky Slab",
     "block.ulsliminexblocks.dry_moldy_carpet":"Dry Moldy Carpet",
     "block.ulsliminexblocks.dry_moldy_carpet_stairs":"Dry Moldy Carpet Stairs",
-    "block.ulsliminexblocks.dry_moldy_carpet_slab":"Dry Moldy Carpet Slab"
+    "block.ulsliminexblocks.dry_moldy_carpet_slab":"Dry Moldy Carpet Slab",
+    "block.ulsliminexblocks.dry_carpet":"Dry Carpet",
+    "block.ulsliminexblocks.dry_carpet_stairs":"Dry Carpet Stairs",
+    "block.ulsliminexblocks.dry_carpet_slab":"Dry Carpet Slab"
 
 }

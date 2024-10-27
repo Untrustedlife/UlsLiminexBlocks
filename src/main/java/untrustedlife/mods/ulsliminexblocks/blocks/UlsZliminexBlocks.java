@@ -83,6 +83,21 @@ public static final RegistryObject<Block> MOLDY_CARPET_SLAB = BLOCKS.register("d
 public static final RegistryObject<Item> MOLDY_CARPET_SLAB_ITEM = UlsZliminexItems.ITEMS.register("dry_moldy_carpet_slab", 
     () -> new BlockItem(MOLDY_CARPET_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
+    //Dry Carpet
+    public static final RegistryObject<Block> DRY_CARPET = BLOCKS.register("dry_carpet", 
+    () -> new BaseBlock("Dry Carpet",  Material.WOOL, SoundType.WOOL, 0.7f, 0.7f));
+public static final RegistryObject<Item> DRY_CARPET_ITEM = UlsZliminexItems.ITEMS.register("dry_carpet", 
+    () -> new BlockItem(DRY_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+public static final RegistryObject<Block> DRY_CARPET_STAIRS = BLOCKS.register("dry_carpet_stairs", 
+    () -> new BaseStairs(() -> DRY_CARPET.get().defaultBlockState(),"Dry Carpet Stairs",  Material.WOOL, SoundType.WOOL, 0.7f, 0.7f));
+public static final RegistryObject<Item> DRY_CARPET_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("dry_carpet_stairs", 
+    () -> new BlockItem(DRY_CARPET_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+public static final RegistryObject<Block> DRY_CARPET_SLAB = BLOCKS.register("dry_carpet_slab", 
+    () -> new BaseSlab("Dry Carpet Slab", Material.WOOL, SoundType.WOOL, 0.7f, 0.7f));
+public static final RegistryObject<Item> DRY_CARPET_SLAB_ITEM = UlsZliminexItems.ITEMS.register("dry_carpet_slab", 
+    () -> new BlockItem(DRY_CARPET_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
     //False Sky
     public static final RegistryObject<Block> FALSE_SKY = BLOCKS.register("false_sky", 
