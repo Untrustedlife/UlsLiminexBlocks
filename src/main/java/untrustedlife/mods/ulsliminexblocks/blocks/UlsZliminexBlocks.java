@@ -66,6 +66,58 @@ public class UlsZliminexBlocks {
         () -> new BaseSlab("Moist Carpet Slab", Material.WOOL, SoundType.MUD, 0.9f, 0.9f));
     public static final RegistryObject<Item> MOIST_CARPET_SLAB_ITEM = UlsZliminexItems.ITEMS.register("moist_carpet_slab", 
         () -> new BlockItem(MOIST_CARPET_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    //Dry Moldy Carpet
+    public static final RegistryObject<Block> MOLDY_CARPET = BLOCKS.register("dry_moldy_carpet", 
+    () -> new BaseBlock("Dry Moldy Carpet",  Material.WOOL, SoundType.WOOL, 1f, 1f));
+public static final RegistryObject<Item> MOLDY_CARPET_ITEM = UlsZliminexItems.ITEMS.register("dry_moldy_carpet", 
+    () -> new BlockItem(MOLDY_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+public static final RegistryObject<Block> MOLDY_CARPET_STAIRS = BLOCKS.register("dry_moldy_carpet_stairs", 
+    () -> new BaseStairs(() -> MOLDY_CARPET.get().defaultBlockState(),"Dry Moldy Carpet Stairs",  Material.WOOL, SoundType.WOOL, 1f, 1f));
+public static final RegistryObject<Item> MOLDY_CARPET_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("dry_moldy_carpet_stairs", 
+    () -> new BlockItem(MOLDY_CARPET_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+public static final RegistryObject<Block> MOLDY_CARPET_SLAB = BLOCKS.register("dry_moldy_carpet_slab", 
+    () -> new BaseSlab("Dry Moldy Carpet Slab", Material.WOOL, SoundType.WOOL, 1f, 1f));
+public static final RegistryObject<Item> MOLDY_CARPET_SLAB_ITEM = UlsZliminexItems.ITEMS.register("dry_moldy_carpet_slab", 
+    () -> new BlockItem(MOLDY_CARPET_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+
+    //False Sky
+    public static final RegistryObject<Block> FALSE_SKY = BLOCKS.register("false_sky", 
+        () -> new BaseBlock("False Sky", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
+    public static final RegistryObject<Item>FALSE_SKY_ITEM = UlsZliminexItems.ITEMS.register("false_sky", 
+        () -> new BlockItem(FALSE_SKY.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> FALSE_SKY_STAIRS = BLOCKS.register("false_sky_stairs", 
+        () -> new BaseStairs(() -> FALSE_SKY.get().defaultBlockState(),"False Sky Stairs", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
+    public static final RegistryObject<Item> FALSE_SKY_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("false_sky_stairs", 
+        () -> new BlockItem(FALSE_SKY_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> FALSE_SKY_SLAB = BLOCKS.register("false_sky_slab", 
+        () -> new BaseSlab("False Sky Slab", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
+    public static final RegistryObject<Item> FALSE_SKY_SLAB_ITEM = UlsZliminexItems.ITEMS.register("false_sky_slab", 
+        () -> new BlockItem(FALSE_SKY_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    
+    //Concrete
+    public static final RegistryObject<Block> BLACK_CRACKED_CONCRETE = BLOCKS.register("black_cracked_concrete", 
+    () -> new BaseBlock("Cracked Black Concrete", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
+    public static final RegistryObject<Item>BLACK_CRACKED_CONCRETE_ITEM = UlsZliminexItems.ITEMS.register("black_cracked_concrete", 
+    () -> new BlockItem(BLACK_CRACKED_CONCRETE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    public static final RegistryObject<Block> BROWN_CRACKED_CONCRETE = BLOCKS.register("brown_cracked_concrete", 
+    () -> new BaseBlock("Cracked Brown Concrete", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
+    public static final RegistryObject<Item>BROWN_CRACKED_CONCRETE_ITEM = UlsZliminexItems.ITEMS.register("brown_cracked_concrete", 
+    () -> new BlockItem(BROWN_CRACKED_CONCRETE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    public static final RegistryObject<Block> WHITE_CRACKED_CONCRETE = BLOCKS.register("white_cracked_concrete", 
+    () -> new BaseBlock("Cracked White Concrete", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
+    public static final RegistryObject<Item>WHITE_CRACKED_CONCRETE_ITEM = UlsZliminexItems.ITEMS.register("white_cracked_concrete", 
+    () -> new BlockItem(WHITE_CRACKED_CONCRETE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    public static final RegistryObject<Block> YELLOW_CRACKED_CONCRETE = BLOCKS.register("yellow_cracked_concrete", 
+    () -> new BaseBlock("Cracked Yellow Concrete", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
+    public static final RegistryObject<Item>YELLOW_CRACKED_CONCRETE_ITEM = UlsZliminexItems.ITEMS.register("yellow_cracked_concrete", 
+    () -> new BlockItem(YELLOW_CRACKED_CONCRETE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
     // Register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ulsliminexblocks:block/dry_moldy_carpet",
+    "side": "ulsliminexblocks:block/dry_moldy_carpet",
+    "top": "ulsliminexblocks:block/dry_moldy_carpet"
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "variants": {
+      "type=bottom": {
+        "model": "ulsliminexblocks:block/false_sky_slab"
+      },
+      "type=double": {
+        "model": "ulsliminexblocks:block/false_sky"
+      },
+      "type=top": {
+        "model": "ulsliminexblocks:block/false_sky_slab_top"
+      }
+    }
+  }
