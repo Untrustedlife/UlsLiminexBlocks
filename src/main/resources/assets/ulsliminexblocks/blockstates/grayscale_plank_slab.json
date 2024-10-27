@@ -1,0 +1,13 @@
+{
+    "variants": {
+      "type=bottom": {
+        "model": "ulsliminexblocks:block/grayscale_plank_slab"
+      },
+      "type=double": {
+        "model": "ulsliminexblocks:block/grayscale_plank"
+      },
+      "type=top": {
+        "model": "ulsliminexblocks:block/grayscale_plank_slab_top"
+      }
+    }
+  }

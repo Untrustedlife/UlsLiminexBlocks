@@ -1,15 +1,22 @@
 package untrustedlife.mods.ulsliminexblocks.blocks;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SignBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StandingSignBlock;
+import net.minecraft.world.level.block.WallSignBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SignItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import untrustedlife.mods.ulsliminexblocks.UlsZliminex;
+import untrustedlife.mods.ulsliminexblocks.entity.UlsZliminexWoodTypes;
 import untrustedlife.mods.ulsliminexblocks.items.UlsZliminexItems;
 
 public class UlsZliminexBlocks {
@@ -66,6 +73,22 @@ public class UlsZliminexBlocks {
         () -> new BaseSlab("Moist Carpet Slab", Material.WOOL, SoundType.MUD, 0.9f, 0.9f));
     public static final RegistryObject<Item> MOIST_CARPET_SLAB_ITEM = UlsZliminexItems.ITEMS.register("moist_carpet_slab", 
         () -> new BlockItem(MOIST_CARPET_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    //Noderooms Carpet
+        public static final RegistryObject<Block> NODEROOMS_CARPET = BLOCKS.register("noderooms_carpet", 
+        () -> new BaseBlock("Noderooms Carpet",  Material.WOOL, SoundType.MUD, 0.9f, 0.9f));
+    public static final RegistryObject<Item> NODEROOMS_CARPET_ITEM = UlsZliminexItems.ITEMS.register("noderooms_carpet", 
+        () -> new BlockItem(NODEROOMS_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> NODEROOMS_CARPET_STAIRS = BLOCKS.register("noderooms_carpet_stairs", 
+        () -> new BaseStairs(() -> NODEROOMS_CARPET.get().defaultBlockState(),"Noderooms Carpet Stairs",  Material.WOOL, SoundType.MUD, 0.9f, 0.9f));
+    public static final RegistryObject<Item> NODEROOMS_CARPET_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("noderooms_carpet_stairs", 
+        () -> new BlockItem(NODEROOMS_CARPET_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> NODEROOMS_CARPET_SLAB = BLOCKS.register("noderooms_carpet_slab", 
+        () -> new BaseSlab("Noderooms Carpet Slab", Material.WOOL, SoundType.MUD, 0.9f, 0.9f));
+    public static final RegistryObject<Item> NODEROOMS_CARPET_SLAB_ITEM = UlsZliminexItems.ITEMS.register("noderooms_carpet_slab", 
+        () -> new BlockItem(NODEROOMS_CARPET_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
     //Dry Moldy Carpet
     public static final RegistryObject<Block> MOLDY_CARPET = BLOCKS.register("dry_moldy_carpet", 
@@ -133,6 +156,33 @@ public static final RegistryObject<Item> DRY_CARPET_SLAB_ITEM = UlsZliminexItems
     public static final RegistryObject<Item>YELLOW_CRACKED_CONCRETE_ITEM = UlsZliminexItems.ITEMS.register("yellow_cracked_concrete", 
     () -> new BlockItem(YELLOW_CRACKED_CONCRETE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
+    //Grayscale Wood
+    public static final RegistryObject<Block> GRAYSCALE_PLANK = BLOCKS.register("grayscale_plank", 
+    () -> new BaseBlock("Grayscale Plank",  Material.WOOD, SoundType.WOOD, 2.0f, 2.0f));
+    public static final RegistryObject<Item> GRAYSCALE_PLANK_ITEM = UlsZliminexItems.ITEMS.register("grayscale_plank", 
+    () -> new BlockItem(GRAYSCALE_PLANK.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> GRAYSCALE_PLANK_STAIRS = BLOCKS.register("grayscale_plank_stairs", 
+    () -> new BaseStairs(() -> GRAYSCALE_PLANK.get().defaultBlockState(),"Grayscale Plank Stairs",  Material.WOOD, SoundType.WOOD, 2.0f, 2.0f));
+    public static final RegistryObject<Item> GRAYSCALE_PLANK_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("grayscale_plank_stairs", 
+    () -> new BlockItem(GRAYSCALE_PLANK_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> GRAYSCALE_PLANK_SLAB = BLOCKS.register("grayscale_plank_slab", 
+    () -> new BaseSlab("Grayscale Plank Slab", Material.WOOD, SoundType.WOOD, 2.0f, 2.0f));
+    public static final RegistryObject<Item> GRAYSCALE_PLANK_SLAB_ITEM = UlsZliminexItems.ITEMS.register("grayscale_plank_slab", 
+    () -> new BlockItem(GRAYSCALE_PLANK_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    //Me trying to avoid making my own classes lol
+    public static final RegistryObject<Block> GRAYSCALE_PLANK_SIGN = BLOCKS.register("grayscale_sign", () ->
+        new StandingSignBlock(BlockBehaviour.Properties.of(Material.WOOD).noCollission().strength(1.0f), UlsZliminexWoodTypes.GRAYSCALE) // Use WoodType to control sign rendering
+    );
+    public static final RegistryObject<Block> GRAYSCALE_PLANK_WALL_SIGN = BLOCKS.register("grayscale_wall_sign", () ->
+        new WallSignBlock(BlockBehaviour.Properties.of(Material.WOOD).noCollission().strength(1.0f), UlsZliminexWoodTypes.GRAYSCALE)
+    );
+    public static final RegistryObject<Item> GRAYSCALE_PLANK_SIGN_ITEM = UlsZliminexItems.ITEMS.register("grayscale_sign", () ->
+        new SignItem(new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB), GRAYSCALE_PLANK_SIGN.get(), GRAYSCALE_PLANK_WALL_SIGN.get(
+    ))
+    );
     // Register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

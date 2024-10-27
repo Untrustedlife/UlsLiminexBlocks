@@ -17,6 +17,11 @@
     "block.ulsliminexblocks.dry_moldy_carpet_slab":"Dry Moldy Carpet Slab",
     "block.ulsliminexblocks.dry_carpet":"Dry Carpet",
     "block.ulsliminexblocks.dry_carpet_stairs":"Dry Carpet Stairs",
-    "block.ulsliminexblocks.dry_carpet_slab":"Dry Carpet Slab"
-
+    "block.ulsliminexblocks.dry_carpet_slab":"Dry Carpet Slab",
+    "block.ulsliminexblocks.noderooms_carpet":"Noderooms Carpet",
+    "block.ulsliminexblocks.noderooms_carpet_stairs":"Noderooms Carpet Stairs",
+    "block.ulsliminexblocks.noderooms_carpet_slab":"Noderooms Carpet Slab",
+    "block.ulsliminexblocks.grayscale_plank":"Grayscale Planks",
+    "block.ulsliminexblocks.grayscale_plank_stairs":"Grayscale Plank Stairs",
+    "block.ulsliminexblocks.grayscale_plank_slab":"Grayscale Plank Slab"
 }
