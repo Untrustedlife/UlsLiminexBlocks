@@ -1,12 +1,11 @@
 package untrustedlife.mods.ulsliminexblocks.blocks;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SignBlock;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StandingSignBlock;
 import net.minecraft.world.level.block.WallSignBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -16,6 +15,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import untrustedlife.mods.ulsliminexblocks.UlsZliminex;
+import untrustedlife.mods.ulsliminexblocks.entity.UlsZLiminexStandingSign;
+import untrustedlife.mods.ulsliminexblocks.entity.UlsZLiminexWallSign;
 import untrustedlife.mods.ulsliminexblocks.entity.UlsZliminexWoodTypes;
 import untrustedlife.mods.ulsliminexblocks.items.UlsZliminexItems;
 
@@ -174,10 +175,10 @@ public static final RegistryObject<Item> DRY_CARPET_SLAB_ITEM = UlsZliminexItems
 
     //Me trying to avoid making my own classes lol
     public static final RegistryObject<Block> GRAYSCALE_PLANK_SIGN = BLOCKS.register("grayscale_sign", () ->
-        new StandingSignBlock(BlockBehaviour.Properties.of(Material.WOOD).noCollission().strength(1.0f), UlsZliminexWoodTypes.GRAYSCALE) // Use WoodType to control sign rendering
+        new UlsZLiminexStandingSign(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), UlsZliminexWoodTypes.GRAYSCALE) // Use WoodType to control sign rendering
     );
     public static final RegistryObject<Block> GRAYSCALE_PLANK_WALL_SIGN = BLOCKS.register("grayscale_wall_sign", () ->
-        new WallSignBlock(BlockBehaviour.Properties.of(Material.WOOD).noCollission().strength(1.0f), UlsZliminexWoodTypes.GRAYSCALE)
+        new UlsZLiminexWallSign(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), UlsZliminexWoodTypes.GRAYSCALE)
     );
     public static final RegistryObject<Item> GRAYSCALE_PLANK_SIGN_ITEM = UlsZliminexItems.ITEMS.register("grayscale_sign", () ->
         new SignItem(new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB), GRAYSCALE_PLANK_SIGN.get(), GRAYSCALE_PLANK_WALL_SIGN.get(

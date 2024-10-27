@@ -5,9 +5,12 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import untrustedlife.mods.ulsliminexblocks.blocks.UlsZliminexBlocks;
@@ -43,7 +46,7 @@ public class UlsZliminex {
         UlsZliminexEntities.register(bus);
         LOGGER.info("Entities loaded.");
 
-        BlockEntityRenderers.register(UlsZliminexEntities.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
+        //BlockEntityRenderers.register(UlsZliminexEntities.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
 
         UlsZliminexConfiguredFeatures.register(bus);
         LOGGER.info("Configured Features loaded.");
@@ -52,9 +55,14 @@ public class UlsZliminex {
         LOGGER.info("Placed Features loaded.");
     }
 
+    @SubscribeEvent
+    public static void clientSetup(final FMLClientSetupEvent event){
+        WoodType.register(UlsZliminexWoodTypes.GRAYSCALE);
+        BlockEntityRenderers.register(UlsZliminexEntities.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
+    }
+
     public void onSetupEvent(final FMLCommonSetupEvent event) {
         LOGGER.info("Common setup event triggered");
-
         Sheets.addWoodType(UlsZliminexWoodTypes.GRAYSCALE);
     }
 

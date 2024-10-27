@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/thin_block",
+    "textures": {
+        "particle":"ulsliminexblocks:block/grayscale_plank"
+    }
+}

@@ -13,11 +13,11 @@ public class UlsZliminexEntities {
         public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, UlsZliminex.MODID);
 
-        public static final RegistryObject<BlockEntityType<SignBlockEntity>> SIGN_BLOCK_ENTITIES =
+        public static final RegistryObject<BlockEntityType<UlsZLiminexSignBlockEntity>> SIGN_BLOCK_ENTITIES =
             BLOCK_ENTITIES.register("grayscale_sign_entity", () ->
-                    BlockEntityType.Builder.of(SignBlockEntity::new,
-                            UlsZliminexBlocks.GRAYSCALE_PLANK_WALL_SIGN.get(),
-                            UlsZliminexBlocks.GRAYSCALE_PLANK_SIGN.get()).build(null));
+                    BlockEntityType.Builder.of(UlsZLiminexSignBlockEntity::new,
+                            UlsZliminexBlocks.GRAYSCALE_PLANK_SIGN.get(),
+                            UlsZliminexBlocks.GRAYSCALE_PLANK_WALL_SIGN.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
