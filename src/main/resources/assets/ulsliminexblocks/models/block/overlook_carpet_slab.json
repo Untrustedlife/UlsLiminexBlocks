@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "ulsliminexblocks:block/overlook_carpet",
+    "side": "ulsliminexblocks:block/overlook_carpet",
+    "top": "ulsliminexblocks:block/overlook_carpet"
+  }
+}

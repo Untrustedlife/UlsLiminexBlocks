@@ -216,9 +216,29 @@ public class UlsZliminexBlocks {
     );
     public static final RegistryObject<Item> GRAYSCALE_PLANK_SIGN_ITEM = UlsZliminexItems.ITEMS.register("grayscale_sign", () ->
         new SignItem(new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB), GRAYSCALE_PLANK_SIGN.get(), GRAYSCALE_PLANK_WALL_SIGN.get(
-    ))
+    )));
 
-    );
+    //Overlook Carpet
+    public static final RegistryObject<Block> OVERLOOK_CARPET = BLOCKS.register("overlook_carpet", 
+    () -> new BaseBlock("Abstract Carpet",  Material.WOOL, SoundType.WOOL, 1f, 1f));
+    public static final RegistryObject<Item> OVERLOOK_CARPET_ITEM = UlsZliminexItems.ITEMS.register("overlook_carpet", 
+        () -> new BlockItem(OVERLOOK_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> OVERLOOK_CARPET_STAIRS = BLOCKS.register("overlook_carpet_stairs", 
+        () -> new BaseStairs(() -> OVERLOOK_CARPET.get().defaultBlockState(),"Abstract Carpet Stairs",  Material.WOOL, SoundType.WOOL, 1f, 1f));
+    public static final RegistryObject<Item> OVERLOOK_CARPET_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("overlook_carpet_stairs", 
+        () -> new BlockItem(OVERLOOK_CARPET_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> OVERLOOK_CARPET_SLAB = BLOCKS.register("overlook_carpet_slab", 
+        () -> new BaseSlab("Abstract Carpet Slab", Material.WOOL, SoundType.WOOL, 1f, 1f));
+    public static final RegistryObject<Item> OVERLOOK_CARPET_SLAB_ITEM = UlsZliminexItems.ITEMS.register("overlook_carpet_slab", 
+        () -> new BlockItem(OVERLOOK_CARPET_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    //This is a hilarious name and i'm keeping it
+    public static final RegistryObject<Block>  OVERLOOK_CARPET_CARPET = BLOCKS.register("overlook_carpet_carpet", 
+        () -> new BaseCarpet("Abstract Carpet Carpet", Material.WOOL, SoundType.WOOL, 0.5f, 0.5f));
+    public static final RegistryObject<Item>  OVERLOOK_CARPET_CARPET_ITEM = UlsZliminexItems.ITEMS.register("overlook_carpet_carpet", 
+        () -> new BlockItem( OVERLOOK_CARPET_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+        
     // Register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
