@@ -58,7 +58,6 @@ public class UlsZliminexBlocks {
     public static final RegistryObject<Item> YELLOW_WALLPAPER_SLAB_ITEM = UlsZliminexItems.ITEMS.register("yellow_wallpaper_slab", 
         () -> new BlockItem(YELLOW_WALLPAPER_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
     
-
     //Moist Carpet
     public static final RegistryObject<Block> MOIST_CARPET = BLOCKS.register("moist_carpet", 
         () -> new BaseBlock("Moist Carpet",  Material.WOOL, SoundType.MUD, 0.9f, 0.9f));
@@ -74,6 +73,11 @@ public class UlsZliminexBlocks {
         () -> new BaseSlab("Moist Carpet Slab", Material.WOOL, SoundType.MUD, 0.9f, 0.9f));
     public static final RegistryObject<Item> MOIST_CARPET_SLAB_ITEM = UlsZliminexItems.ITEMS.register("moist_carpet_slab", 
         () -> new BlockItem(MOIST_CARPET_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    //This is a hilarious name and i'm keeping it
+    public static final RegistryObject<Block> MOIST_CARPET_CARPET = BLOCKS.register("moist_carpet_carpet", 
+        () -> new BaseCarpet("Moist Carpet Carpet", Material.WOOL, SoundType.MUD, 0.3f, 0.3f));
+    public static final RegistryObject<Item> MOIST_CARPET_CARPET_ITEM = UlsZliminexItems.ITEMS.register("moist_carpet_carpet", 
+        () -> new BlockItem(MOIST_CARPET_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
     //Noderooms Carpet
         public static final RegistryObject<Block> NODEROOMS_CARPET = BLOCKS.register("noderooms_carpet", 
@@ -90,6 +94,11 @@ public class UlsZliminexBlocks {
         () -> new BaseSlab("Noderooms Carpet Slab", Material.WOOL, SoundType.MUD, 0.9f, 0.9f));
     public static final RegistryObject<Item> NODEROOMS_CARPET_SLAB_ITEM = UlsZliminexItems.ITEMS.register("noderooms_carpet_slab", 
         () -> new BlockItem(NODEROOMS_CARPET_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    //This is a hilarious name and i'm keeping it
+    public static final RegistryObject<Block> NODEROOMS_CARPET_CARPET = BLOCKS.register("noderooms_carpet_carpet", 
+        () -> new BaseCarpet("Noderooms Carpet Carpet", Material.WOOL, SoundType.MUD, 0.1f, 0.3f));
+    public static final RegistryObject<Item> NODEROOMS_CARPET_CARPET_ITEM = UlsZliminexItems.ITEMS.register("noderooms_carpet_carpet", 
+        () -> new BlockItem(NODEROOMS_CARPET_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
     //Dry Moldy Carpet
     public static final RegistryObject<Block> MOLDY_CARPET = BLOCKS.register("dry_moldy_carpet", 
@@ -106,7 +115,12 @@ public static final RegistryObject<Block> MOLDY_CARPET_SLAB = BLOCKS.register("d
     () -> new BaseSlab("Dry Moldy Carpet Slab", Material.WOOL, SoundType.WOOL, 1f, 1f));
 public static final RegistryObject<Item> MOLDY_CARPET_SLAB_ITEM = UlsZliminexItems.ITEMS.register("dry_moldy_carpet_slab", 
     () -> new BlockItem(MOLDY_CARPET_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
-
+//This is a hilarious name and i'm keeping it
+public static final RegistryObject<Block>  MOLDY_CARPET_CARPET = BLOCKS.register("dry_moldy_carpet_carpet", 
+    () -> new BaseCarpet("Dry Moldy Carpet Carpet", Material.WOOL, SoundType.WOOL, 0.5f, 0.5f));
+public static final RegistryObject<Item>  MOLDY_CARPET_CARPET_ITEM = UlsZliminexItems.ITEMS.register("dry_moldy_carpet_carpet", 
+    () -> new BlockItem( MOLDY_CARPET_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    
     //Dry Carpet
     public static final RegistryObject<Block> DRY_CARPET = BLOCKS.register("dry_carpet", 
     () -> new BaseBlock("Dry Carpet",  Material.WOOL, SoundType.WOOL, 0.7f, 0.7f));
@@ -122,6 +136,11 @@ public static final RegistryObject<Block> DRY_CARPET_SLAB = BLOCKS.register("dry
     () -> new BaseSlab("Dry Carpet Slab", Material.WOOL, SoundType.WOOL, 0.7f, 0.7f));
 public static final RegistryObject<Item> DRY_CARPET_SLAB_ITEM = UlsZliminexItems.ITEMS.register("dry_carpet_slab", 
     () -> new BlockItem(DRY_CARPET_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+//This is a hilarious name and i'm keeping it
+public static final RegistryObject<Block>  DRY_CARPET_CARPET = BLOCKS.register("dry_carpet_carpet", 
+    () -> new BaseCarpet("Dry Carpet Carpet", Material.WOOL, SoundType.WOOL, 0.35f, 0.35f));
+public static final RegistryObject<Item>  DRY_CARPET_CARPET_ITEM = UlsZliminexItems.ITEMS.register("dry_carpet_carpet", 
+    () -> new BlockItem( DRY_CARPET_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
     //False Sky
     public static final RegistryObject<Block> FALSE_SKY = BLOCKS.register("false_sky", 
@@ -173,9 +192,8 @@ public static final RegistryObject<Item> DRY_CARPET_SLAB_ITEM = UlsZliminexItems
     public static final RegistryObject<Item> GRAYSCALE_PLANK_SLAB_ITEM = UlsZliminexItems.ITEMS.register("grayscale_plank_slab", 
     () -> new BlockItem(GRAYSCALE_PLANK_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
-    //Me trying to avoid making my own classes lol
     public static final RegistryObject<Block> GRAYSCALE_PLANK_SIGN = BLOCKS.register("grayscale_sign", () ->
-        new UlsZLiminexStandingSign(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), UlsZliminexWoodTypes.GRAYSCALE) // Use WoodType to control sign rendering
+        new UlsZLiminexStandingSign(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), UlsZliminexWoodTypes.GRAYSCALE)
     );
     public static final RegistryObject<Block> GRAYSCALE_PLANK_WALL_SIGN = BLOCKS.register("grayscale_wall_sign", () ->
         new UlsZLiminexWallSign(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), UlsZliminexWoodTypes.GRAYSCALE)
@@ -183,6 +201,7 @@ public static final RegistryObject<Item> DRY_CARPET_SLAB_ITEM = UlsZliminexItems
     public static final RegistryObject<Item> GRAYSCALE_PLANK_SIGN_ITEM = UlsZliminexItems.ITEMS.register("grayscale_sign", () ->
         new SignItem(new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB), GRAYSCALE_PLANK_SIGN.get(), GRAYSCALE_PLANK_WALL_SIGN.get(
     ))
+
     );
     // Register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {
