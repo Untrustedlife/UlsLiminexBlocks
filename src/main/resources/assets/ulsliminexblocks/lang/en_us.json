@@ -3,6 +3,9 @@
     "block.ulsliminexblocks.pooltile":"Pool Tiles",
     "block.ulsliminexblocks.pooltile_stairs":"Pool Stairs",
     "block.ulsliminexblocks.pooltile_slab":"Pool Slab",
+    "block.ulsliminexblocks.moldy_pooltile":"Moldy Pool Tiles",
+    "block.ulsliminexblocks.moldy_pooltile_stairs":"Moldy Pool Stairs",
+    "block.ulsliminexblocks.moldy_pooltile_slab":"Moldy Pool Slab",
     "block.ulsliminexblocks.yellow_wallpaper":"Noderooms Wallpaper",
     "block.ulsliminexblocks.yellow_wallpaper_stairs":"Noderooms Stairs",
     "block.ulsliminexblocks.yellow_wallpaper_slab":"Noderooms Slab",
@@ -28,5 +31,9 @@
     "block.ulsliminexblocks.grayscale_plank":"Grayscale Planks",
     "block.ulsliminexblocks.grayscale_plank_stairs":"Grayscale Plank Stairs",
     "block.ulsliminexblocks.grayscale_plank_slab":"Grayscale Plank Slab",
-    "block.ulsliminexblocks.grayscale_sign":"Grayscale Sign"
+    "block.ulsliminexblocks.grayscale_sign":"Grayscale Sign",
+    "block.ulsliminexblocks.black_cracked_concrete":"Cracked Black Concrete",
+    "block.ulsliminexblocks.brown_cracked_concrete":"Cracked Brown Concrete",
+    "block.ulsliminexblocks.white_cracked_concrete":"Cracked White Concrete",
+    "block.ulsliminexblocks.yellow_cracked_concrete":"Cracked Yellow Concrete"
 }

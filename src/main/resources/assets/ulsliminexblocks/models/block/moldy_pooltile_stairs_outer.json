@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "ulsliminexblocks:block/moldy_pooltile",
+    "side": "ulsliminexblocks:block/moldy_pooltile",
+    "top": "ulsliminexblocks:block/moldy_pooltile"
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "variants": {
+      "type=bottom": {
+        "model": "ulsliminexblocks:block/moldy_pooltile_slab"
+      },
+      "type=double": {
+        "model": "ulsliminexblocks:block/moldy_pooltile"
+      },
+      "type=top": {
+        "model": "ulsliminexblocks:block/moldy_pooltile_slab_top"
+      }
+    }
+  }
