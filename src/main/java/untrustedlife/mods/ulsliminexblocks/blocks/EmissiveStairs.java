@@ -15,26 +15,24 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.Material;
 
-public class BaseStairs extends StairBlock {
+public class EmissiveStairs extends StairBlock {
+    protected int lightLevel;
+    private final String blockNameForId;
+
     /**
-     * Constructor for BaseStairs. 
-     * Sets the block material to specified material.
+     * Constructor for EmissiveStairs. 
+     * Sets the block material to specified material and light level..
      */
-    public BaseStairs(Supplier<BlockState> baseStateSupplier, String name, Material material, SoundType sound, float strength, float resistance) {
+    public EmissiveStairs(Supplier<BlockState> baseStateSupplier, String name, Material material, SoundType sound, float strength, float resistance, int initialLightLevel) {
         super(baseStateSupplier, Properties.of(material)
             .strength(strength, resistance)
             .sound(sound)
-            .isSuffocating(BaseStairs::isBlockSuffocating).dynamicShape());
-
-        this.blockNameForId = name;
+            .isSuffocating(BaseStairs::isBlockSuffocating).emissiveRendering(EmissiveStairs::emissiveRendering).dynamicShape());
+            this.blockNameForId = name;
+            this.lightLevel = initialLightLevel;
         
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(HALF, Half.BOTTOM).setValue(SHAPE, StairsShape.STRAIGHT).setValue(WATERLOGGED, Boolean.valueOf(false)));
     }
-
-    protected static boolean isBlockSuffocating(BlockState state, BlockGetter world, BlockPos pos) {
-        return false;
-    }
-    private final String blockNameForId;
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
@@ -44,5 +42,14 @@ public class BaseStairs extends StairBlock {
     @Override
     public FluidState getFluidState(BlockState state) {
         return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
+    }
+
+    protected static boolean emissiveRendering(BlockState state, BlockGetter world, BlockPos pos) {
+        return true;
+    }
+
+    @Override
+    public int getLightEmission(BlockState state, BlockGetter world, BlockPos pos) {
+        return this.lightLevel;
     }
 }
