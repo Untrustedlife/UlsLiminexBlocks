@@ -1,13 +1,13 @@
 {
     "variants": {
       "type=bottom": {
-        "model": "ulsliminexblocks:block/blue_pooltile_slab"
+        "model": "ulsliminexblocks:block/white_pure_slab"
       },
       "type=double": {
-        "model": "ulsliminexblocks:block/blue_pooltile"
+        "model": "ulsliminexblocks:block/white_pure"
       },
       "type=top": {
-        "model": "ulsliminexblocks:block/blue_pooltile_slab_top"
+        "model": "ulsliminexblocks:block/white_pure_slab_top"
       }
     }
   }

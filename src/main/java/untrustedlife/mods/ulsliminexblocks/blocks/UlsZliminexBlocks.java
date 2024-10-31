@@ -61,17 +61,17 @@ public class UlsZliminexBlocks {
 
     //Pure White
     public static final RegistryObject<Block> PURE_WHITE = BLOCKS.register("white_pure", 
-    () -> new EmissiveBlock("White Void", Material.METAL, SoundType.GLASS, 1.5f, 6.0f,1));
+    () -> new EmissiveBlock("White Void", Material.METAL, SoundType.AMETHYST, 1.5f, 6.0f,3));
     public static final RegistryObject<Item> PURE_WHITE_ITEM = UlsZliminexItems.ITEMS.register("white_pure", 
     () -> new BlockItem(PURE_WHITE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
     public static final RegistryObject<Block> PURE_WHITE_STAIRS = BLOCKS.register("white_pure_stairs", 
-    () -> new EmissiveStairs(() -> PURE_WHITE.get().defaultBlockState(),"White Void Stairs", Material.METAL, SoundType.GLASS, 1.5f, 6.0f,1));
+    () -> new EmissiveStairs(() -> PURE_WHITE.get().defaultBlockState(),"White Void Stairs", Material.METAL, SoundType.AMETHYST, 1.5f, 6.0f,3));
     public static final RegistryObject<Item> PURE_WHITE_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("white_pure_stairs", 
     () -> new BlockItem(PURE_WHITE_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
     public static final RegistryObject<Block> PURE_WHITE_SLAB = BLOCKS.register("white_pure_slab", 
-    () -> new EmissiveSlab("White Void Slab", Material.METAL, SoundType.GLASS, 1.5f, 6.0f,1));
+    () -> new EmissiveSlab("White Void Slab", Material.METAL, SoundType.AMETHYST, 1.5f, 6.0f,3));
     public static final RegistryObject<Item> PURE_WHITE_SLAB_ITEM = UlsZliminexItems.ITEMS.register("white_pure_slab", 
     () -> new BlockItem(PURE_WHITE_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 

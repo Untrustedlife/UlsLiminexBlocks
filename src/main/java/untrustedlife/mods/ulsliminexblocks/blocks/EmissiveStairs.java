@@ -14,6 +14,9 @@ import net.minecraft.world.level.block.state.properties.StairsShape;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class EmissiveStairs extends StairBlock {
     protected int lightLevel;
@@ -27,6 +30,8 @@ public class EmissiveStairs extends StairBlock {
         super(baseStateSupplier, Properties.of(material)
             .strength(strength, resistance)
             .sound(sound)
+            .noOcclusion() 
+            .isRedstoneConductor((state, world, pos) -> false) 
             .isSuffocating(BaseStairs::isBlockSuffocating).emissiveRendering(EmissiveStairs::emissiveRendering).dynamicShape());
             this.blockNameForId = name;
             this.lightLevel = initialLightLevel;
@@ -52,4 +57,24 @@ public class EmissiveStairs extends StairBlock {
     public int getLightEmission(BlockState state, BlockGetter world, BlockPos pos) {
         return this.lightLevel;
     }
+
+    @Override
+    public int getLightBlock(BlockState state, BlockGetter world, BlockPos pos) {
+        return 0; // Sets block to not block light, removing shadows
+    }
+
+    @Override
+    public float getShadeBrightness(BlockState state, BlockGetter world, BlockPos pos) {
+        return 1.0f; // Ensures full brightness, minimizing shadows
+    }
+    
+   @Override
+   public boolean propagatesSkylightDown(BlockState p_48740_, BlockGetter p_48741_, BlockPos p_48742_) {
+      return true;
+   }
+
+   @Override
+   public boolean useShapeForLightOcclusion(BlockState state) {
+       return false;
+   }
 }

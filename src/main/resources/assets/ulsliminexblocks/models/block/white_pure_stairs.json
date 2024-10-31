@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/stairs",
+  "ambientocclusion": false,
+  "textures": {
+    "bottom": "ulsliminexblocks:block/white_pure",
+    "side": "ulsliminexblocks:block/white_pure",
+    "top": "ulsliminexblocks:block/white_pure"
+  }
+}
