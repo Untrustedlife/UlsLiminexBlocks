@@ -58,20 +58,36 @@ public class UlsZliminexBlocks {
     public static final RegistryObject<Item> BLUE_POOL_TILE_SLAB_ITEM = UlsZliminexItems.ITEMS.register("blue_pooltile_slab", 
     () -> new BlockItem(BLUE_POOL_TILE_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
+    //Recessed Blue Pool Tiles
+    public static final RegistryObject<Block> RECESSED_BLUE_POOL_TILE = BLOCKS.register("recessed_blue_pooltile", 
+    () -> new BaseBlock("Recessed Blue Pool Tiles", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
+    public static final RegistryObject<Item> RECESSED_BLUE_POOL_TILE_ITEM = UlsZliminexItems.ITEMS.register("recessed_blue_pooltile", 
+    () -> new BlockItem(RECESSED_BLUE_POOL_TILE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> RECESSED_BLUE_POOL_TILE_STAIRS = BLOCKS.register("recessed_blue_pooltile_stairs", 
+    () -> new BaseStairs(() -> RECESSED_BLUE_POOL_TILE.get().defaultBlockState(),"Recessed Blue Pool Stairs", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
+    public static final RegistryObject<Item> RECESSED_BLUE_POOL_TILE_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("recessed_blue_pooltile_stairs", 
+    () -> new BlockItem(RECESSED_BLUE_POOL_TILE_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> RECESSED_BLUE_POOL_TILE_SLAB = BLOCKS.register("recessed_blue_pooltile_slab", 
+    () -> new BaseSlab("Recessed Blue Pool Slab", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
+    public static final RegistryObject<Item> RECESSED_BLUE_POOL_TILE_SLAB_ITEM = UlsZliminexItems.ITEMS.register("recessed_blue_pooltile_slab", 
+    () -> new BlockItem(RECESSED_BLUE_POOL_TILE_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    
 
     //Pure White
     public static final RegistryObject<Block> PURE_WHITE = BLOCKS.register("white_pure", 
-    () -> new EmissiveBlock("White Void", Material.METAL, SoundType.AMETHYST, 1.5f, 6.0f,3));
+    () -> new EmissiveBlock("White Void", Material.METAL, SoundType.AMETHYST, 1.5f, 6.0f,15));
     public static final RegistryObject<Item> PURE_WHITE_ITEM = UlsZliminexItems.ITEMS.register("white_pure", 
     () -> new BlockItem(PURE_WHITE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
     public static final RegistryObject<Block> PURE_WHITE_STAIRS = BLOCKS.register("white_pure_stairs", 
-    () -> new EmissiveStairs(() -> PURE_WHITE.get().defaultBlockState(),"White Void Stairs", Material.METAL, SoundType.AMETHYST, 1.5f, 6.0f,3));
+    () -> new EmissiveStairs(() -> PURE_WHITE.get().defaultBlockState(),"White Void Stairs", Material.METAL, SoundType.AMETHYST, 1.5f, 6.0f,15));
     public static final RegistryObject<Item> PURE_WHITE_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("white_pure_stairs", 
     () -> new BlockItem(PURE_WHITE_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
     public static final RegistryObject<Block> PURE_WHITE_SLAB = BLOCKS.register("white_pure_slab", 
-    () -> new EmissiveSlab("White Void Slab", Material.METAL, SoundType.AMETHYST, 1.5f, 6.0f,3));
+    () -> new EmissiveSlab("White Void Slab", Material.METAL, SoundType.AMETHYST, 1.5f, 6.0f,15));
     public static final RegistryObject<Item> PURE_WHITE_SLAB_ITEM = UlsZliminexItems.ITEMS.register("white_pure_slab", 
     () -> new BlockItem(PURE_WHITE_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 

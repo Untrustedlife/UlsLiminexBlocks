@@ -1,0 +1,13 @@
+{
+    "variants": {
+      "type=bottom": {
+        "model": "ulsliminexblocks:block/recessed_blue_pooltile_slab"
+      },
+      "type=double": {
+        "model": "ulsliminexblocks:block/recessed_blue_pooltile"
+      },
+      "type=top": {
+        "model": "ulsliminexblocks:block/recessed_blue_pooltile_slab_top"
+      }
+    }
+  }
