@@ -21,12 +21,11 @@ public class BaseRandomVariantBlock extends BaseBlock {
      * Sets the block material to specified material.
      */
     public int maxVarientForRandomization=0;
-    public final IntegerProperty VARIANT;
+    public static final IntegerProperty VARIANT=IntegerProperty.create("variant", 1, 100);;
 
     public BaseRandomVariantBlock(String name, Material material, SoundType sound, float strength, float resistance,int maxVarient) {
         super(name,material,sound,strength,resistance);
         this.blockNameForId = name;
-        this.VARIANT=IntegerProperty.create("variant", 1, maxVarient);
         this.registerDefaultState(this.stateDefinition.any()
         .setValue(this.VARIANT, 1)); // Default variant 1
         this.maxVarientForRandomization = maxVarient;

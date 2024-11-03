@@ -1,6 +1,6 @@
 {
   "variants": {
-    "variant=1": { "model": "ulsliminexblocks:block/false_night_sky_1" },
+    "variant=1": { "model": "ulsliminexblocks:block/false_night_sky" },
     "variant=2": { "model": "ulsliminexblocks:block/false_night_sky_2" },
     "variant=3": { "model": "ulsliminexblocks:block/false_night_sky_3" },
     "variant=4": { "model": "ulsliminexblocks:block/false_night_sky_4" }

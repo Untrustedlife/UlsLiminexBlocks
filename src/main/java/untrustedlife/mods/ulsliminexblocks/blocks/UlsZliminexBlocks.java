@@ -307,7 +307,7 @@ public class UlsZliminexBlocks {
 
     //Night Sky
     public static final RegistryObject<Block> FALSE_NIGHT_SKY = BLOCKS.register("false_night_sky", 
-    () -> new BaseRandomVariantBlock("Black Pool Tiles", Material.STONE, SoundType.STONE, 1.5f, 6.0f,4));
+    () -> new BaseRandomVariantBlock("False Night Sky", Material.STONE, SoundType.STONE, 1.5f, 6.0f,4));
     public static final RegistryObject<Item> FALSE_NIGHT_SKY_ITEM = UlsZliminexItems.ITEMS.register("false_night_sky", 
     () -> new BlockItem(FALSE_NIGHT_SKY.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
