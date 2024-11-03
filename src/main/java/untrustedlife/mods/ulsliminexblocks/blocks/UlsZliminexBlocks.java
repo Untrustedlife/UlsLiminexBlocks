@@ -74,6 +74,22 @@ public class UlsZliminexBlocks {
     public static final RegistryObject<Item> RECESSED_BLUE_POOL_TILE_SLAB_ITEM = UlsZliminexItems.ITEMS.register("recessed_blue_pooltile_slab", 
     () -> new BlockItem(RECESSED_BLUE_POOL_TILE_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
     
+    //Black Pool Tiles
+    public static final RegistryObject<Block> BLACK_POOL_TILE = BLOCKS.register("black_pooltile", 
+    () -> new BaseBlock("Black Pool Tiles", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
+    public static final RegistryObject<Item> BLACK_POOL_TILE_ITEM = UlsZliminexItems.ITEMS.register("black_pooltile", 
+    () -> new BlockItem(BLACK_POOL_TILE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> BLACK_POOL_TILE_STAIRS = BLOCKS.register("black_pooltile_stairs", 
+    () -> new BaseStairs(() -> BLACK_POOL_TILE.get().defaultBlockState(),"Black Pool Stairs", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
+    public static final RegistryObject<Item> BLACK_POOL_TILE_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("black_pooltile_stairs", 
+    () -> new BlockItem(BLACK_POOL_TILE_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> BLACK_POOL_TILE_SLAB = BLOCKS.register("black_pooltile_slab", 
+    () -> new BaseSlab("Black Pool Slab", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
+    public static final RegistryObject<Item> BLACK_POOL_TILE_SLAB_ITEM = UlsZliminexItems.ITEMS.register("black_pooltile_slab", 
+    () -> new BlockItem(BLACK_POOL_TILE_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    
 
     //Pure White
     public static final RegistryObject<Block> PURE_WHITE = BLOCKS.register("white_pure", 
@@ -287,7 +303,14 @@ public class UlsZliminexBlocks {
         () -> new BaseCarpet("Abstract Carpet Carpet", Material.WOOL, SoundType.WOOL, 0.5f, 0.5f));
     public static final RegistryObject<Item>  OVERLOOK_CARPET_CARPET_ITEM = UlsZliminexItems.ITEMS.register("overlook_carpet_carpet", 
         () -> new BlockItem( OVERLOOK_CARPET_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
-        
+    
+
+    //Night Sky
+    public static final RegistryObject<Block> FALSE_NIGHT_SKY = BLOCKS.register("false_night_sky", 
+    () -> new BaseRandomVariantBlock("Black Pool Tiles", Material.STONE, SoundType.STONE, 1.5f, 6.0f,4));
+    public static final RegistryObject<Item> FALSE_NIGHT_SKY_ITEM = UlsZliminexItems.ITEMS.register("false_night_sky", 
+    () -> new BlockItem(FALSE_NIGHT_SKY.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
     // Register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

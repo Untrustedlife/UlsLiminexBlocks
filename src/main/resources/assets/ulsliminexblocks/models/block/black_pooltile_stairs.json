@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ulsliminexblocks:block/black_pooltile",
+    "side": "ulsliminexblocks:block/black_pooltile",
+    "top": "ulsliminexblocks:block/black_pooltile"
+  }
+}

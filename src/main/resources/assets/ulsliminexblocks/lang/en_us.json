@@ -39,5 +39,14 @@
     "block.ulsliminexblocks.black_cracked_concrete":"Cracked Black Concrete",
     "block.ulsliminexblocks.brown_cracked_concrete":"Cracked Brown Concrete",
     "block.ulsliminexblocks.white_cracked_concrete":"Cracked White Concrete",
-    "block.ulsliminexblocks.yellow_cracked_concrete":"Cracked Yellow Concrete"
+    "block.ulsliminexblocks.yellow_cracked_concrete":"Cracked Yellow Concrete",
+    "block.ulsliminexblocks.black_pooltile":"Black Pool Tiles",
+    "block.ulsliminexblocks.black_pooltile_stairs":"Black Pool Stairs",
+    "block.ulsliminexblocks.black_pooltile_slab":"Black Pool Slab",
+    "block.ulsliminexblocks.recessed_blue_pooltile":"Recessed Blue Pool Tiles",
+    "block.ulsliminexblocks.recessed_blue_pooltile_stairs":"Recessed Blue Pool Stairs",
+    "block.ulsliminexblocks.recessed_blue_pooltile_slab":"Recessed Blue Pool Slab",
+    "block.ulsliminexblocks.white_pure":"White Void",
+    "block.ulsliminexblocks.white_pure_stairs":"White Void Stairs",
+    "block.ulsliminexblocks.white_pure_slab":"White Void Slab"
 }
