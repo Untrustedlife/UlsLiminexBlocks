@@ -23,7 +23,7 @@ public class UlsZliminexItems {
         @Override
         public ItemStack makeIcon() {
             // Set the item icon for the tab (using the broom as an example)
-            return new ItemStack(UlsZliminexBlocks.POOL_TILE_ITEM.get());
+            return new ItemStack(UlsZliminexBlocks.FALSE_SKY_ITEM.get());
         }
     };
 

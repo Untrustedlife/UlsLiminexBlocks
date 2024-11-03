@@ -48,5 +48,9 @@
     "block.ulsliminexblocks.recessed_blue_pooltile_slab":"Recessed Blue Pool Slab",
     "block.ulsliminexblocks.white_pure":"White Void",
     "block.ulsliminexblocks.white_pure_stairs":"White Void Stairs",
-    "block.ulsliminexblocks.white_pure_slab":"White Void Slab"
+    "block.ulsliminexblocks.white_pure_slab":"White Void Slab",
+    "block.ulsliminexblocks.blue_pooltile":"Blue Pool Tiles",
+    "block.ulsliminexblocks.blue_pooltile_stairs":"Blue Pool Stairs",
+    "block.ulsliminexblocks.blue_pooltile_slab":"Blue Pool Slab",
+    "block.ulsliminexblocks.false_night_sky":"False Night Sky"
 }
