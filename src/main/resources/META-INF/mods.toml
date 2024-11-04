@@ -10,7 +10,7 @@ license="GPLv3"
     modId="ulsliminexblocks"
     version="1.0"
     displayName="Uls Liminex Blocks"
-    description="A mod specifically designed for my Z-Liminex modpack, created to streamline the process of adding eerie, atmospheric blocks for building liminal spaces and modern city structures. Plus, it makes these blocks available for others to use! This mod really shines when paired with Lost Cities, as I've ensured that all the blocks are fully compatible, allowing for even more surreal and unusual cityscapes."
+    description="A mod specifically designed for my Z-Liminex modpack that adds numerous new vanilla styled blocks for building eerie liminal and dreamlike spaces."
     credits="Untrustedlife"
 
 [[dependencies.ulsliminexblocks]]
