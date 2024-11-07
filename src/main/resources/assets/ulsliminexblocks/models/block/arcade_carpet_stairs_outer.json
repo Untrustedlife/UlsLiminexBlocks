@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "ulsliminexblocks:block/arcade_carpet",
+    "side": "ulsliminexblocks:block/arcade_carpet",
+    "top": "ulsliminexblocks:block/arcade_carpet"
+  }
+}

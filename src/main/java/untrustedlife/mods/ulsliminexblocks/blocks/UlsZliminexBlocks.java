@@ -207,6 +207,27 @@ public class UlsZliminexBlocks {
     public static final RegistryObject<Item>  DRY_CARPET_CARPET_ITEM = UlsZliminexItems.ITEMS.register("dry_carpet_carpet", 
         () -> new BlockItem( DRY_CARPET_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
+    //Arcade Carpet
+    public static final RegistryObject<Block> ARCADE_CARPET = BLOCKS.register("arcade_carpet", 
+    () -> new BaseBlock("Arcade Carpet",  Material.WOOL, SoundType.WOOL, 0.7f, 0.7f));
+    public static final RegistryObject<Item> ARCADE_CARPET_ITEM = UlsZliminexItems.ITEMS.register("arcade_carpet", 
+        () -> new BlockItem(ARCADE_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> ARCADE_CARPET_STAIRS = BLOCKS.register("arcade_carpet_stairs", 
+        () -> new BaseStairs(() -> ARCADE_CARPET.get().defaultBlockState(),"Arcade Carpet Stairs",  Material.WOOL, SoundType.WOOL, 0.7f, 0.7f));
+    public static final RegistryObject<Item> ARCADE_CARPET_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("arcade_carpet_stairs", 
+        () -> new BlockItem(ARCADE_CARPET_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> ARCADE_CARPET_SLAB = BLOCKS.register("arcade_carpet_slab", 
+        () -> new BaseSlab("Arcade Carpet Slab", Material.WOOL, SoundType.WOOL, 0.7f, 0.7f));
+    public static final RegistryObject<Item> ARCADE_CARPET_SLAB_ITEM = UlsZliminexItems.ITEMS.register("arcade_carpet_slab", 
+        () -> new BlockItem(ARCADE_CARPET_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    //This is a hilarious name and i'm keeping it
+    public static final RegistryObject<Block>  ARCADE_CARPET_CARPET = BLOCKS.register("arcade_carpet_carpet", 
+        () -> new BaseCarpet("Arcade Carpet Carpet", Material.WOOL, SoundType.WOOL, 0.35f, 0.35f));
+    public static final RegistryObject<Item>  ARCADE_CARPET_CARPET_ITEM = UlsZliminexItems.ITEMS.register("arcade_carpet_carpet", 
+        () -> new BlockItem( ARCADE_CARPET_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
     //False Sky
     public static final RegistryObject<Block> FALSE_SKY = BLOCKS.register("false_sky", 
         () -> new BaseBlock("False Sky", Material.STONE, SoundType.STONE, 1.5f, 6.0f));
