@@ -1,5 +1,6 @@
 package untrustedlife.mods.ulsliminexblocks.datagen;
 
+import net.minecraft.core.Registry;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DataProvider;
@@ -16,6 +17,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.NumberProvider;
+import net.minecraftforge.registries.RegistryObject;
 import untrustedlife.mods.ulsliminexblocks.blocks.UlsZliminexBlocks;
 
 import java.io.IOException;
@@ -33,7 +35,7 @@ public class UlsZLiminexBlockLootTableProvider extends net.minecraft.data.loot.L
 
     public UlsZLiminexBlockLootTableProvider(DataGenerator generator) {
         super(generator);
-        this.pathProvider = generator.createPathProvider(DataGenerator.Target.DATA_PACK, "blocks/loot_tables");
+        this.pathProvider = generator.createPathProvider(DataGenerator.Target.DATA_PACK, "loot_tables/blocks");
     }
 
     @Override
@@ -42,7 +44,19 @@ public class UlsZLiminexBlockLootTableProvider extends net.minecraft.data.loot.L
         Map<ResourceLocation, LootTable> tables = Maps.newHashMap();
 
         // Define a loot table for a single block (e.g., MY_BLOCK)
-        tables.put(UlsZliminexBlocks.ARCADE_CARPET.getId(), createSelfDropTable(UlsZliminexBlocks.ARCADE_CARPET.get()));
+    // Loop through all registered blocks
+    UlsZliminexBlocks.BLOCKS.getEntries().stream()
+        .map(RegistryObject::get)  // Get the actual Block from each RegistryObject
+        .filter(block -> {
+            // Filter to include only blocks from your mod
+            ResourceLocation id = Registry.BLOCK.getKey(block);
+            return id != null && id.getNamespace().equals("ulsliminexblocks");  // Replace with your mod's ID
+        })
+        .forEach(block -> {
+            // Create a self-drop loot table for each block
+            ResourceLocation blockId = Registry.BLOCK.getKey(block);
+            tables.put(blockId, createSelfDropTable(block));
+        });
 
         // Validate and save the loot tables
         ValidationContext validationContext = new ValidationContext(LootContextParamSets.ALL_PARAMS, (p) -> null, tables::get);

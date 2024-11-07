@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ulsliminexblocks:dry_moldy_carpet_stairs"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

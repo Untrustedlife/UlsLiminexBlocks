@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ulsliminexblocks:recessed_blue_pooltile_stairs"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}
