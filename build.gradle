@@ -75,7 +75,12 @@ minecraft {
                 }
             }
         }
-
+        data {
+            workingDirectory project.file('run')
+            taskName = 'runData'
+            args '--mod', 'ulsliminexblocks', '--all'
+            source sourceSets.main
+        }
         }
 }
 
