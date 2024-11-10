@@ -1,0 +1,13 @@
+{
+    "variants": {
+      "type=bottom": {
+        "model": "ulsliminexblocks:block/star_carpet_slab"
+      },
+      "type=double": {
+        "model": "ulsliminexblocks:block/star_carpet"
+      },
+      "type=top": {
+        "model": "ulsliminexblocks:block/star_carpet_slab_top"
+      }
+    }
+  }

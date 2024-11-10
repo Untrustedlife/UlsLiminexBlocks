@@ -56,5 +56,10 @@
     "block.ulsliminexblocks.blue_pooltile":"Blue Pool Tiles",
     "block.ulsliminexblocks.blue_pooltile_stairs":"Blue Pool Stairs",
     "block.ulsliminexblocks.blue_pooltile_slab":"Blue Pool Slab",
-    "block.ulsliminexblocks.false_night_sky":"False Night Sky"
+    "block.ulsliminexblocks.false_night_sky":"False Night Sky",
+    "block.ulsliminexblocks.play_place_wall":"Playtime Panel",
+    "block.ulsliminexblocks.star_carpet_carpet":"Star Carpet Carpet",
+    "block.ulsliminexblocks.star_carpet":"Star Carpet",
+    "block.ulsliminexblocks.star_carpet_stairs":"Star Carpet Stairs",
+    "block.ulsliminexblocks.star_carpet_slab":"Star Carpet Slab"
 }

@@ -326,11 +326,39 @@ public class UlsZliminexBlocks {
         () -> new BlockItem( OVERLOOK_CARPET_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
     
 
+    //Star Carpet
+    public static final RegistryObject<Block> STAR_CARPET = BLOCKS.register("star_carpet", 
+    () -> new BaseBlock("Star Carpet",  Material.WOOL, SoundType.WOOL, 1f, 1f));
+    public static final RegistryObject<Item> STAR_CARPET_ITEM = UlsZliminexItems.ITEMS.register("star_carpet", 
+        () -> new BlockItem(STAR_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> STAR_CARPET_STAIRS = BLOCKS.register("star_carpet_stairs", 
+        () -> new BaseStairs(() -> STAR_CARPET.get().defaultBlockState(),"Star Carpet Stairs",  Material.WOOL, SoundType.WOOL, 1f, 1f));
+    public static final RegistryObject<Item> STAR_CARPET_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("star_carpet_stairs", 
+        () -> new BlockItem(STAR_CARPET_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> STAR_CARPET_SLAB = BLOCKS.register("star_carpet_slab", 
+        () -> new BaseSlab("Star Carpet Slab", Material.WOOL, SoundType.WOOL, 1f, 1f));
+    public static final RegistryObject<Item> STAR_CARPET_SLAB_ITEM = UlsZliminexItems.ITEMS.register("star_carpet_slab", 
+        () -> new BlockItem(STAR_CARPET_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    //This is a hilarious name and i'm keeping it
+    public static final RegistryObject<Block>  STAR_CARPET_CARPET = BLOCKS.register("star_carpet_carpet", 
+        () -> new BaseCarpet("Star Carpet Carpet", Material.WOOL, SoundType.WOOL, 0.5f, 0.5f));
+    public static final RegistryObject<Item>  STAR_CARPET_CARPET_ITEM = UlsZliminexItems.ITEMS.register("star_carpet_carpet", 
+        () -> new BlockItem( STAR_CARPET_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+
     //Night Sky
     public static final RegistryObject<Block> FALSE_NIGHT_SKY = BLOCKS.register("false_night_sky", 
     () -> new BaseRandomVariantBlock("False Night Sky", Material.STONE, SoundType.STONE, 1.5f, 6.0f,4));
     public static final RegistryObject<Item> FALSE_NIGHT_SKY_ITEM = UlsZliminexItems.ITEMS.register("false_night_sky", 
     () -> new BlockItem(FALSE_NIGHT_SKY.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    //Play Place Wall
+    public static final RegistryObject<Block> PLAY_PLACE_WALL = BLOCKS.register("play_place_wall", 
+    () -> new BaseRandomVariantBlock("Playplace Wall", Material.DECORATION, SoundType.SCAFFOLDING, 2.5f, 3.0f,7));
+    public static final RegistryObject<Item> PLAY_PLACE_WALL_ITEM = UlsZliminexItems.ITEMS.register("play_place_wall", 
+    () -> new BlockItem(PLAY_PLACE_WALL.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
     // Register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {

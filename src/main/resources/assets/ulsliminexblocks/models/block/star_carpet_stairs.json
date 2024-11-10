@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ulsliminexblocks:block/star_carpet",
+    "side": "ulsliminexblocks:block/star_carpet",
+    "top": "ulsliminexblocks:block/star_carpet"
+  }
+}

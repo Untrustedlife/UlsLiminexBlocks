@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+	  "all": "ulsliminexblocks:block/play_place_wall_1"
+	}
+  }
