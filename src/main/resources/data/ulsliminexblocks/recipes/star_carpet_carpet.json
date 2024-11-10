@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "ulsliminexblocks:star_carpet"
+    }
+  },
+  "pattern": [
+    "BB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "ulsliminexblocks:star_carpet_carpet"
+  }
+}

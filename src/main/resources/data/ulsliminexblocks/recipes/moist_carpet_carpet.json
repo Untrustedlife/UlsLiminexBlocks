@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "ulsliminexblocks:moist_carpet"
+    }
+  },
+  "pattern": [
+    "BB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "ulsliminexblocks:moist_carpet_carpet"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_black_pooltile": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ulsliminexblocks:black_pooltile"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ulsliminexblocks:black_pooltile_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_black_pooltile",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ulsliminexblocks:black_pooltile_stairs"
+    ]
+  }
+}

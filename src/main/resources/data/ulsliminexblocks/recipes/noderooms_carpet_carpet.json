@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "ulsliminexblocks:noderooms_carpet"
+    }
+  },
+  "pattern": [
+    "BB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "ulsliminexblocks:noderooms_carpet_carpet"
+  }
+}

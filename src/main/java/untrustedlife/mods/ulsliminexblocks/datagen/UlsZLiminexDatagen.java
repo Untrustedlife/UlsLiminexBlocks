@@ -17,6 +17,7 @@ public class UlsZLiminexDatagen {
         if (event.includeServer()) {
             // Add data providers for server-side data like loot tables, recipes, tags
             generator.addProvider(true, new UlsZLiminexBlockLootTableProvider(generator));
+            generator.addProvider(true, new UlsLiminexBlockRecipeProvider(generator));
         }
 
         if (event.includeClient()) {

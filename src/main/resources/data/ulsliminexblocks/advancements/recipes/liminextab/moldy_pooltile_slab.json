@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_moldy_pooltile": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ulsliminexblocks:moldy_pooltile"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ulsliminexblocks:moldy_pooltile_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_moldy_pooltile",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ulsliminexblocks:moldy_pooltile_slab"
+    ]
+  }
+}

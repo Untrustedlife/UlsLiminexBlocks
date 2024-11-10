@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ulsliminexblocks:white_pure_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_pure": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ulsliminexblocks:white_pure"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_white_pure",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ulsliminexblocks:white_pure_slab"
+    ]
+  }
+}
