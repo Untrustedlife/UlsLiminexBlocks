@@ -6,6 +6,7 @@ import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -14,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import untrustedlife.mods.ulsliminexblocks.blocks.UlsZliminexBlocks;
+import untrustedlife.mods.ulsliminexblocks.entity.UlsLiminexWanderingTraderTrades;
 import untrustedlife.mods.ulsliminexblocks.entity.UlsZliminexEntities;
 import untrustedlife.mods.ulsliminexblocks.entity.UlsZliminexWoodTypes;
 import untrustedlife.mods.ulsliminexblocks.features.UlsZliminexConfiguredFeatures;
@@ -53,6 +55,10 @@ public class UlsZliminex {
 
         UlsZliminexPlacedFeatures.register(bus);
         LOGGER.info("Placed Features loaded.");
+
+        //UlsLiminexWanderingTraderTrades.register(bus);
+        //LOGGER.info("Trades Loaded.");
+
     }
 
     @SubscribeEvent

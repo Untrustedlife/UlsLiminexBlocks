@@ -43,7 +43,7 @@ public class UlsZLiminexBlockLootTableProvider extends net.minecraft.data.loot.L
         // Map to store all block loot tables
         Map<ResourceLocation, LootTable> tables = Maps.newHashMap();
 
-        // Define a loot table for a single block (e.g., MY_BLOCK)
+    // Define a loot table for a single block (e.g., MY_BLOCK)
     // Loop through all registered blocks
     UlsZliminexBlocks.BLOCKS.getEntries().stream()
         .map(RegistryObject::get)  // Get the actual Block from each RegistryObject
