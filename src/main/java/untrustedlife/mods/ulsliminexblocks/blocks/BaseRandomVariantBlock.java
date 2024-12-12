@@ -56,5 +56,8 @@ public class BaseRandomVariantBlock extends BaseBlock {
             .setValue(this.VARIANT, randomVariant);  // Set the variant to the random variant
     }
 
+    protected static boolean isBlockSuffocating(BlockState state, BlockGetter world, BlockPos pos) {
+        return true;
+    }
     private final String blockNameForId;
 }
