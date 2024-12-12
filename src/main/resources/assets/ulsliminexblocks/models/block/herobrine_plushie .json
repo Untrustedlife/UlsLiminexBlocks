@@ -1,9 +1,9 @@
 {
-  "parent": "moa_decor_toys:custom/herobrine_plushie",
+  "parent": "ulsliminexblocks:custom/herobrine_plushie",
   "textures": {
-    "all": "moa_decor_toys:blocks/herobrine_plushie",
-    "particle": "moa_decor_toys:blocks/herobrine_plushie",
-    "0": "moa_decor_toys:blocks/herobrine_plushie"
+    "all": "ulsliminexblocks:blocks/herobrine_plushie",
+    "particle": "ulsliminexblocks:blocks/herobrine_plushie",
+    "0": "ulsliminexblocks:blocks/herobrine_plushie"
   },
   "render_type": "cutout_mipped"
 }

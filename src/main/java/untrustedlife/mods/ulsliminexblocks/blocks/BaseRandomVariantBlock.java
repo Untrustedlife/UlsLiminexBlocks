@@ -8,7 +8,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import untrustedlife.mods.ulsliminexblocks.UntrustedDiceRolling;
-
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.BlockGetter;
 
 /**
  * A block representing a block that cna randomly change texture when placed.

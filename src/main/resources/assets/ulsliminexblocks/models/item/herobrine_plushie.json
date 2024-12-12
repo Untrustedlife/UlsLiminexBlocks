@@ -1,5 +1,5 @@
 {
-  "parent": "moa_decor_toys:block/herobrine_plushie",
+  "parent": "ulsliminexblocks:block/herobrine_plushie",
   "display": {
     "thirdperson": {
       "rotation": [
