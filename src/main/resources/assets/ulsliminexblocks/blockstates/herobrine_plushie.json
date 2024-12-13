@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ulsliminexblocks:block/herobrine_plushie"
+    },
+    "facing=east": {
+      "model": "ulsliminexblocks:block/herobrine_plushie",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ulsliminexblocks:block/herobrine_plushie",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ulsliminexblocks:block/herobrine_plushie",
+      "y": 270
+    }
+  }
+}

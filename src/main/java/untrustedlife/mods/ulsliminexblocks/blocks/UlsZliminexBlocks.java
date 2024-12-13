@@ -360,6 +360,16 @@ public class UlsZliminexBlocks {
     public static final RegistryObject<Item> PLAY_PLACE_WALL_ITEM = UlsZliminexItems.ITEMS.register("play_place_wall", 
     () -> new BlockItem(PLAY_PLACE_WALL.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
+    public static final RegistryObject<Block> HEROBRINE_PLUSHIE = BLOCKS.register("herobrine_plushie", 
+    () -> new PlushieBlock("Herobrine Plushie",  Material.WOOL, SoundType.WOOL, 1f, 1f));
+    public static final RegistryObject<Item> HEROBRINE_PLUSHIE_ITEM = UlsZliminexItems.ITEMS.register("herobrine_plushie", 
+    () -> new BlockItem(HEROBRINE_PLUSHIE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> HORROR_BABY_PLUSHIE = BLOCKS.register("horror_baby_plushie", 
+    () -> new PlushieBlock("Horror Baby Plushie",  Material.WOOL, SoundType.WOOL, 1f, 1f));
+    public static final RegistryObject<Item> HORROR_BABY_PLUSHIE_ITEM = UlsZliminexItems.ITEMS.register("horror_baby_plushie", 
+    () -> new BlockItem(HORROR_BABY_PLUSHIE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
     // Register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

@@ -1,0 +1,9 @@
+{
+  "parent": "ulsliminexblocks:custom/horror_baby_plushie",
+  "textures": {
+    "all": "ulsliminexblocks:block/horror_baby_plushie",
+    "particle": "ulsliminexblocks:block/horror_baby_plushie",
+    "0": "ulsliminexblocks:block/horror_baby_plushie"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ulsliminexblocks:custom/herobrine_plushie",
+  "textures": {
+    "all": "ulsliminexblocks:block/herobrine_plushie",
+    "particle": "ulsliminexblocks:block/herobrine_plushie",
+    "0": "ulsliminexblocks:block/herobrine_plushie"
+  },
+  "render_type": "cutout_mipped"
+}

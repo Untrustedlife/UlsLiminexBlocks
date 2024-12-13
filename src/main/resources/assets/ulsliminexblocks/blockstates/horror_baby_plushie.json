@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ulsliminexblocks:block/horror_baby_plushie"
+    },
+    "facing=east": {
+      "model": "ulsliminexblocks:block/horror_baby_plushie",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ulsliminexblocks:block/horror_baby_plushie",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ulsliminexblocks:block/horror_baby_plushie",
+      "y": 270
+    }
+  }
+}
