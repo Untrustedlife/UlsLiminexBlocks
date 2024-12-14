@@ -370,6 +370,22 @@ public class UlsZliminexBlocks {
     public static final RegistryObject<Item> HORROR_BABY_PLUSHIE_ITEM = UlsZliminexItems.ITEMS.register("horror_baby_plushie", 
     () -> new BlockItem(HORROR_BABY_PLUSHIE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
+
+    //Quick and dirty broken glass test
+    public static final RegistryObject<Block> BROKEN_GLASS_BLOCK = BLOCKS.register("broken_glass_block", 
+    () -> new BaseBlock("Broken Glass",  Material.GLASS, SoundType.GLASS, 1f, 1f,true));
+    public static final RegistryObject<Item> BROKEN_GLASS_BLOCK_ITEM = UlsZliminexItems.ITEMS.register("broken_glass_block", 
+        () -> new BlockItem(BROKEN_GLASS_BLOCK.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> DIRTY_BROKEN_GLASS_BLOCK = BLOCKS.register("dirty_broken_glass_block", 
+    () -> new BaseBlock("Decrepit Broken Glass",  Material.GLASS, SoundType.GLASS, 1f, 1f,true));
+    public static final RegistryObject<Item> DIRTY_BROKEN_GLASS_BLOCK_ITEM = UlsZliminexItems.ITEMS.register("dirty_broken_glass_block", 
+        () -> new BlockItem(DIRTY_BROKEN_GLASS_BLOCK.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> DIRTY_GLASS_BLOCK = BLOCKS.register("dirty_glass_block", 
+    () -> new BaseBlock("Decrepit Glass",  Material.GLASS, SoundType.GLASS, 1f, 1f,true));
+     public static final RegistryObject<Item> DIRTY_GLASS_BLOCK_ITEM = UlsZliminexItems.ITEMS.register("dirty_glass_block", 
+         () -> new BlockItem(DIRTY_GLASS_BLOCK.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
     // Register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

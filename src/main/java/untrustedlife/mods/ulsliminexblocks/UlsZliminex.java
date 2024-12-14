@@ -2,11 +2,12 @@ package untrustedlife.mods.ulsliminexblocks;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.world.level.block.state.properties.WoodType;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -15,7 +16,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import untrustedlife.mods.ulsliminexblocks.blocks.UlsZliminexBlocks;
-import untrustedlife.mods.ulsliminexblocks.entity.UlsLiminexWanderingTraderTrades;
 import untrustedlife.mods.ulsliminexblocks.entity.UlsZliminexEntities;
 import untrustedlife.mods.ulsliminexblocks.entity.UlsZliminexWoodTypes;
 import untrustedlife.mods.ulsliminexblocks.features.UlsZliminexConfiguredFeatures;
@@ -65,6 +65,9 @@ public class UlsZliminex {
     public static void clientSetup(final FMLClientSetupEvent event){
         WoodType.register(UlsZliminexWoodTypes.GRAYSCALE);
         BlockEntityRenderers.register(UlsZliminexEntities.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
+        ItemBlockRenderTypes.setRenderLayer(UlsZliminexBlocks.BROKEN_GLASS_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(UlsZliminexBlocks.DIRTY_BROKEN_GLASS_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(UlsZliminexBlocks.DIRTY_GLASS_BLOCK.get(), RenderType.translucent());
     }
 
     public void onSetupEvent(final FMLCommonSetupEvent event) {
