@@ -1,6 +1,7 @@
 package untrustedlife.mods.ulsliminexblocks.blocks;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.Material;
@@ -41,6 +42,16 @@ public class BaseBlock extends Block {
     public String getBlockNameForId() {
         return blockNameForId;
     }
+
+    public boolean skipRendering(BlockState p_53972_, BlockState p_53973_, Direction p_53974_) {
+        if (isGlassLike()){
+            return p_53973_.is(this) ? true : super.skipRendering(p_53972_, p_53973_, p_53974_);
+        }
+        else {
+            return false;
+        }
+
+   }
 
     /**
      * Helper method to create block properties based on whether or not this block is "glass-like."
