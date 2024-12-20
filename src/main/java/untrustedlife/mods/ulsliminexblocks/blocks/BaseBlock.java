@@ -63,13 +63,13 @@ public class BaseBlock extends Block {
 
         // For glass-like blocks, disable occlusion and set suffocating to false
         if (glassLike) {
-            props.noOcclusion();
+            props=props.noOcclusion();
             // If you want to prevent suffocation or rendering the inside of the block, also override isViewBlocking
-            props.isSuffocating((state, level, pos) -> false);
-            props.isViewBlocking((state, level, pos) -> false);
+            props=props.isSuffocating((state, level, pos) -> false);
+            props=props.isViewBlocking((state, level, pos) -> false);
         } else {
             // If not glass, keep the default suffocation logic or override as needed
-            props.isSuffocating(BaseBlock::isBlockSuffocating);
+            props=props.isSuffocating(BaseBlock::isBlockSuffocating);
         }
 
         return props;
