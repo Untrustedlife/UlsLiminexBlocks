@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ulsliminexblocks:block/dirty_broken_glass_block"
+  }
+}

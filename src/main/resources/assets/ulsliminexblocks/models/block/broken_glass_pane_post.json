@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_post",
+  "textures": {
+    "edge": "ulsliminexblocks:block/broken_glass_block",
+    "pane": "ulsliminexblocks:block/broken_glass_block"
+  }
+}

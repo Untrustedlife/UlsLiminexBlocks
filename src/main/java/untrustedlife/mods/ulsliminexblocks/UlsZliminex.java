@@ -68,6 +68,9 @@ public class UlsZliminex {
         ItemBlockRenderTypes.setRenderLayer(UlsZliminexBlocks.BROKEN_GLASS_BLOCK.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(UlsZliminexBlocks.DIRTY_BROKEN_GLASS_BLOCK.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(UlsZliminexBlocks.DIRTY_GLASS_BLOCK.get(), RenderType.translucent());
+
+        ItemBlockRenderTypes.setRenderLayer(UlsZliminexBlocks.BROKEN_GLASS_PANE.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(UlsZliminexBlocks.DIRTY_BROKEN_GLASS_PANE.get(), RenderType.translucent());
     }
 
     public void onSetupEvent(final FMLCommonSetupEvent event) {
