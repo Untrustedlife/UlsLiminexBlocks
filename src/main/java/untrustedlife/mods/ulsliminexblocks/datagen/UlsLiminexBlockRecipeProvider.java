@@ -44,6 +44,10 @@ public class UlsLiminexBlockRecipeProvider extends RecipeProvider {
                     String baseBlockName = blockName.replace("_stairs", "");
                     generateStairsRecipe(consumer, block, baseBlockName);
                 }
+                else if (stairsPattern.matcher(blockName).find()) {
+                    String baseBlockName = blockName.replace("_pane", "_block");
+                    generatePaneRecipe(consumer, block, baseBlockName);
+                }
             });
     }
 
@@ -71,6 +75,16 @@ public class UlsLiminexBlockRecipeProvider extends RecipeProvider {
             .define('B', baseBlock.asItem())
             .pattern("B  ")
             .pattern("BB ")
+            .pattern("BBB")
+            .unlockedBy("has_" + baseBlockName, has(baseBlock.asItem()))
+            .save(consumer);
+    }
+
+    private void generatePaneRecipe(Consumer<FinishedRecipe> consumer, Block block, String baseBlockName) {
+        Block baseBlock = ForgeRegistries.BLOCKS.getValue(new ResourceLocation("ulsliminexblocks", baseBlockName));
+        ShapedRecipeBuilder.shaped(block, 16)
+            .define('B', baseBlock.asItem())
+            .pattern("BBB")
             .pattern("BBB")
             .unlockedBy("has_" + baseBlockName, has(baseBlock.asItem()))
             .save(consumer);

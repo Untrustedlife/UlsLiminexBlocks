@@ -398,12 +398,10 @@ public class UlsZliminexBlocks {
     public static final RegistryObject<Item> DIRTY_BROKEN_GLASS_PANE_ITEM = UlsZliminexItems.ITEMS.register("dirty_broken_glass_pane", 
         () -> new BlockItem(DIRTY_BROKEN_GLASS_PANE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
-    /*
-    public static final RegistryObject<Block> DIRTY_GLASS_BLOCK = BLOCKS.register("dirty_glass_block", 
-    () -> new BaseBlock("Decrepit Glass",  Material.GLASS, SoundType.GLASS, 1f, 1f,true));
-    public static final RegistryObject<Item> DIRTY_GLASS_BLOCK_ITEM = UlsZliminexItems.ITEMS.register("dirty_glass_block", 
-        () -> new BlockItem(DIRTY_GLASS_BLOCK.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
-         */
+    public static final RegistryObject<Block> DIRTY_GLASS_PANE = BLOCKS.register("dirty_glass_pane", 
+    () -> new BaseGlassPane("Decrepit Glass Pane",  Material.GLASS, SoundType.GLASS, 1f, 1f));
+    public static final RegistryObject<Item> DIRTY_GLASS_PANE_ITEM = UlsZliminexItems.ITEMS.register("dirty_glass_pane", 
+        () -> new BlockItem(DIRTY_GLASS_PANE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
     // Register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {
