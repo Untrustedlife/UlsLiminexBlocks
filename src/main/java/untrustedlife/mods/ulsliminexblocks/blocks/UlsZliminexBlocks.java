@@ -385,13 +385,10 @@ public class UlsZliminexBlocks {
      public static final RegistryObject<Item> DIRTY_GLASS_BLOCK_ITEM = UlsZliminexItems.ITEMS.register("dirty_glass_block", 
          () -> new BlockItem(DIRTY_GLASS_BLOCK.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
-
-
     public static final RegistryObject<Block> BROKEN_GLASS_PANE = BLOCKS.register("broken_glass_pane", 
     () -> new BaseGlassPane("Broken Glass Pane",  Material.GLASS, SoundType.GLASS, 1f, 1f));
     public static final RegistryObject<Item> BROKEN_GLASS_PANE_ITEM = UlsZliminexItems.ITEMS.register("broken_glass_pane", 
         () -> new BlockItem(BROKEN_GLASS_PANE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
-
 
     public static final RegistryObject<Block> DIRTY_BROKEN_GLASS_PANE = BLOCKS.register("dirty_broken_glass_pane", 
     () -> new BaseGlassPane("Decrepit Broken Glass Pane",  Material.GLASS, SoundType.GLASS, 1f, 1f));
@@ -402,6 +399,36 @@ public class UlsZliminexBlocks {
     () -> new BaseGlassPane("Decrepit Glass Pane",  Material.GLASS, SoundType.GLASS, 1f, 1f));
     public static final RegistryObject<Item> DIRTY_GLASS_PANE_ITEM = UlsZliminexItems.ITEMS.register("dirty_glass_pane", 
         () -> new BlockItem(DIRTY_GLASS_PANE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+
+    //Dirt slab stairs etc
+    public static final RegistryObject<Block> DIRT_STAIRS = BLOCKS.register("dirt_stairs", 
+        () -> new BaseStairs(() -> Blocks.DIRT.defaultBlockState(),"Dirt Stairs",  Material.DIRT, SoundType.ROOTED_DIRT, 1f, 1f));
+    public static final RegistryObject<Item> DIRT_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("dirt_stairs", 
+        () -> new BlockItem(DIRT_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    public static final RegistryObject<Block> DIRT_SLAB = BLOCKS.register("dirt_slab", 
+        () -> new BaseSlab("Dirt Slab",  Material.DIRT, SoundType.ROOTED_DIRT, 1f, 1f));
+    public static final RegistryObject<Item> DIRT_SLAB_ITEM = UlsZliminexItems.ITEMS.register("dirt_slab", 
+        () -> new BlockItem(DIRT_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    public static final RegistryObject<Block>  DIRT_CARPET = BLOCKS.register("dirt_carpet", 
+        () -> new BaseCarpet("Dirt Carpet", Material.DIRT, SoundType.ROOTED_DIRT, 0.5f, 0.5f));
+    public static final RegistryObject<Item>  DIRT_CARPET_ITEM = UlsZliminexItems.ITEMS.register("dirt_carpet", 
+        () -> new BlockItem( DIRT_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+
+        //Sand slab stairs etc
+        public static final RegistryObject<Block> SAND_STAIRS = BLOCKS.register("sand_stairs", 
+        () -> new BaseStairs(() -> Blocks.DIRT.defaultBlockState(),"Sand Stairs",  Material.DIRT, SoundType.ROOTED_DIRT, 1f, 1f));
+    public static final RegistryObject<Item> SAND_STAIRS_ITEM = UlsZliminexItems.ITEMS.register("sand_stairs", 
+        () -> new BlockItem(SAND_STAIRS.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    public static final RegistryObject<Block> SAND_SLAB = BLOCKS.register("sand_slab", 
+        () -> new BaseSlab("Sand Slab",  Material.DIRT, SoundType.ROOTED_DIRT, 1f, 1f));
+    public static final RegistryObject<Item> SAND_SLAB_ITEM = UlsZliminexItems.ITEMS.register("sand_slab", 
+        () -> new BlockItem(SAND_SLAB.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    public static final RegistryObject<Block>  SAND_CARPET = BLOCKS.register("sand_carpet", 
+        () -> new BaseCarpet("Sand Carpet", Material.DIRT, SoundType.ROOTED_DIRT, 0.5f, 0.5f));
+    public static final RegistryObject<Item>  SAND_CARPET_ITEM = UlsZliminexItems.ITEMS.register("sand_carpet", 
+        () -> new BlockItem( SAND_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
     // Register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {

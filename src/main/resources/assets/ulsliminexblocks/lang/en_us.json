@@ -66,8 +66,8 @@
     "block.ulsliminexblocks.horror_baby_plushie":"Horror Baby",
     "block.ulsliminexblocks.broken_glass_block":"Broken Glass",
     "block.ulsliminexblocks.dirty_broken_glass_block":"Decrepit Broken Glass",
-    "block.ulsliminexblocks.dirty_glass_block":"Decrepit Glass"
-    
-
-    
+    "block.ulsliminexblocks.dirty_glass_block":"Decrepit Glass",
+    "block.ulsliminexblocks.broken_glass_pane":"Broken Glass Pane",
+    "block.ulsliminexblocks.dirty_broken_glass_pane":"Decrepit Broken Pane",
+    "block.ulsliminexblocks.dirty_glass_pane":"Decrepit Glass Pane"
 }

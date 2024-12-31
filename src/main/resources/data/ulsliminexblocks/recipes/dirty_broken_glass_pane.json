@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "ulsliminexblocks:dirty_broken_glass_block"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "result": {
+    "count": 16,
+    "item": "ulsliminexblocks:dirty_broken_glass_pane"
+  }
+}
