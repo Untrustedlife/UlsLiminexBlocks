@@ -69,5 +69,11 @@
     "block.ulsliminexblocks.dirty_glass_block":"Decrepit Glass",
     "block.ulsliminexblocks.broken_glass_pane":"Broken Glass Pane",
     "block.ulsliminexblocks.dirty_broken_glass_pane":"Decrepit Broken Pane",
-    "block.ulsliminexblocks.dirty_glass_pane":"Decrepit Glass Pane"
+    "block.ulsliminexblocks.dirty_glass_pane":"Decrepit Glass Pane",
+    "block.ulsliminexblocks.dirt_carpet":"Thin Dirt",
+    "block.ulsliminexblocks.dirt_stairs":"Dirt Stairs",
+    "block.ulsliminexblocks.dirt_slab":"Dirt Slab",
+    "block.ulsliminexblocks.sand_carpet":"Thin Sand",
+    "block.ulsliminexblocks.sand_stairs":"Sand Stairs",
+    "block.ulsliminexblocks.sand_slab":"Sand Slab"
 }
