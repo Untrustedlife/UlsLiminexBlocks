@@ -39,39 +39,32 @@ public class UlsLiminexBlockRecipeProvider extends RecipeProvider {
                 } else if (slabPattern.matcher(blockName).find()) {
                     String baseBlockName = blockName.replace("_slab", "");
                     switch (baseBlockName){
-                        case "dirt":{
+                        case "dirt":
                             generateSlabRecipeDirectBaseBlock(consumer, block, "minecraft:dirt");
-                        }
                         break;
-                        case "sand":{
+                        case "sand":
                             generateSlabRecipeDirectBaseBlock(consumer, block, "minecraft:sand");
-                        }
                         break;
-                        default:{
+                        default:
                             generateSlabRecipe(consumer, block, baseBlockName);
-                        }
                         break;
                     }
                 } else if (stairsPattern.matcher(blockName).find()) {
                     String baseBlockName = blockName.replace("_stairs", "");
                     switch (baseBlockName){
-                        case "dirt":{
+                        case "dirt":
                             generateStairsRecipeDirectBaseBlock(consumer, block, "minecraft:dirt");
-                        }
                         break;
-                        case "sand":{
+                        case "sand":
                             generateStairsRecipeDirectBaseBlock(consumer, block, "minecraft:sand");
-                        }
                         break;
-                        default:{
+                        default:
                             generateStairsRecipe(consumer, block, baseBlockName);
-                        }
                         break;
                     }
                 }
                 else if (panePattern.matcher(blockName).find()) {
                     String baseBlockName = blockName.replace("_pane", "_block");
-                    generatePaneRecipe(consumer, block, baseBlockName);
                     switch (baseBlockName){
                         default:{
                             generatePaneRecipe(consumer, block, baseBlockName);
