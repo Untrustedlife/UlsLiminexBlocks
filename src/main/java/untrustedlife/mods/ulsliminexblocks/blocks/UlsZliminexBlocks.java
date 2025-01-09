@@ -18,6 +18,7 @@ import untrustedlife.mods.ulsliminexblocks.UlsZliminex;
 import untrustedlife.mods.ulsliminexblocks.entity.UlsZLiminexStandingSign;
 import untrustedlife.mods.ulsliminexblocks.entity.UlsZLiminexWallSign;
 import untrustedlife.mods.ulsliminexblocks.entity.UlsZliminexWoodTypes;
+import untrustedlife.mods.ulsliminexblocks.items.PlushieItem;
 import untrustedlife.mods.ulsliminexblocks.items.UlsZliminexItems;
 
 public class UlsZliminexBlocks {
@@ -363,12 +364,12 @@ public class UlsZliminexBlocks {
     public static final RegistryObject<Block> HEROBRINE_PLUSHIE = BLOCKS.register("herobrine_plushie", 
     () -> new PlushieBlock("Herobrine Plushie",  Material.WOOL, SoundType.WOOL, 1f, 1f));
     public static final RegistryObject<Item> HEROBRINE_PLUSHIE_ITEM = UlsZliminexItems.ITEMS.register("herobrine_plushie", 
-    () -> new BlockItem(HEROBRINE_PLUSHIE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    () -> new PlushieItem(HEROBRINE_PLUSHIE.get(),1600, new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
     public static final RegistryObject<Block> HORROR_BABY_PLUSHIE = BLOCKS.register("horror_baby_plushie", 
     () -> new PlushieBlock("Horror Baby Plushie",  Material.WOOL, SoundType.WOOL, 1f, 1f));
     public static final RegistryObject<Item> HORROR_BABY_PLUSHIE_ITEM = UlsZliminexItems.ITEMS.register("horror_baby_plushie", 
-    () -> new BlockItem(HORROR_BABY_PLUSHIE.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    () -> new PlushieItem(HORROR_BABY_PLUSHIE.get(),1600, new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
     public static final RegistryObject<Block> BROKEN_GLASS_BLOCK = BLOCKS.register("broken_glass_block", 
     () -> new BaseBlock("Broken Glass",  Material.GLASS, SoundType.GLASS, 1f, 1f,true));
