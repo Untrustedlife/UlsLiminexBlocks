@@ -8,7 +8,7 @@ license="GPLv3"
 
 [[mods]]
     modId="ulsliminexblocks"
-    version="1.4"
+    version="1.4.1"
     displayName="Uls Liminex Blocks"
     description="A mod specifically designed for my Z-Liminex modpack that adds numerous new vanilla styled blocks for building eerie liminal and dreamlike spaces."
     credits="Untrustedlife"
