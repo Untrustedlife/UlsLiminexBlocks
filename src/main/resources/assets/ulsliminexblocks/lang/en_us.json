@@ -75,5 +75,10 @@
     "block.ulsliminexblocks.dirt_slab":"Dirt Slab",
     "block.ulsliminexblocks.sand_carpet":"Thin Sand",
     "block.ulsliminexblocks.sand_stairs":"Sand Stairs",
-    "block.ulsliminexblocks.sand_slab":"Sand Slab"
+    "block.ulsliminexblocks.sand_slab":"Sand Slab",
+    "block.ulsliminexblocks.blue_stall":"Blue Divider",
+    "block.ulsliminexblocks.yellow_stall":"Yellow Divider",
+    "block.ulsliminexblocks.gray_stall":"Gray Divider",
+    "block.ulsliminexblocks.black_stall":"Black Divider",
+    "block.ulsliminexblocks.white_stall":"White Divider"
 }
