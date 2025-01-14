@@ -8,6 +8,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.IronBarsBlock;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -94,5 +96,31 @@ public class BaseGlassPane  extends IronBarsBlock  {
         return props;
     }
 
+      @Override
+       public BlockState rotate(BlockState p_52341_, Rotation p_52342_) {
+      switch (p_52342_) {
+         case CLOCKWISE_180:
+            return p_52341_.setValue(NORTH, p_52341_.getValue(SOUTH)).setValue(EAST, p_52341_.getValue(WEST)).setValue(SOUTH, p_52341_.getValue(NORTH)).setValue(WEST, p_52341_.getValue(EAST));
+         case COUNTERCLOCKWISE_90:
+            return p_52341_.setValue(NORTH, p_52341_.getValue(EAST)).setValue(EAST, p_52341_.getValue(SOUTH)).setValue(SOUTH, p_52341_.getValue(WEST)).setValue(WEST, p_52341_.getValue(NORTH));
+         case CLOCKWISE_90:
+            return p_52341_.setValue(NORTH, p_52341_.getValue(WEST)).setValue(EAST, p_52341_.getValue(NORTH)).setValue(SOUTH, p_52341_.getValue(EAST)).setValue(WEST, p_52341_.getValue(SOUTH));
+         default:
+            return p_52341_;
+      }
+   }
+
+   @Override
+   public BlockState mirror(BlockState p_52338_, Mirror p_52339_) {
+      switch (p_52339_) {
+         case LEFT_RIGHT:
+            return p_52338_.setValue(NORTH, p_52338_.getValue(SOUTH)).setValue(SOUTH, p_52338_.getValue(NORTH));
+         case FRONT_BACK:
+            return p_52338_.setValue(EAST, p_52338_.getValue(WEST)).setValue(WEST, p_52338_.getValue(EAST));
+         default:
+            return super.mirror(p_52338_, p_52339_);
+      }
+   }
+   
     private final String blockNameForId;
 }
