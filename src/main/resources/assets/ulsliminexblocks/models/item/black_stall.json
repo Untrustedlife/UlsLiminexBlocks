@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ulsliminexblocks:block/black_stall"
+  }
+}

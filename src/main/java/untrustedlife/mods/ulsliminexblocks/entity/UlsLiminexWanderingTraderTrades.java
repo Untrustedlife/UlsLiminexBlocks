@@ -29,7 +29,7 @@ public class UlsLiminexWanderingTraderTrades {
         .filter(block -> {
             ResourceLocation id = Registry.BLOCK.getKey(block);
             String blockName = id.getPath();
-            return id != null && id.getNamespace().equals("ulsliminexblocks") && !blockName.contains("_slab") && !blockName.contains("_stair") && !blockName.contains("_carpet_carpet") && !blockName.contains("_plushie"); 
+            return id != null && id.getNamespace().equals("ulsliminexblocks") && !blockName.contains("_slab") && !blockName.contains("_stair") && !blockName.contains("_carpet_carpet") && !blockName.contains("_plushie") && !blockName.contains("_stall"); 
         })
         .forEach(block -> {
             tradeList.add(new SimpleTrade(new ItemStack(Items.EMERALD, 1), new ItemStack(block.asItem(), 2)));
@@ -44,6 +44,17 @@ public class UlsLiminexWanderingTraderTrades {
         })
         .forEach(block -> {
             tradeList.add(new SimpleTrade(new ItemStack(Items.EMERALD, 1), new ItemStack(block.asItem(), 15)));
+        });
+
+        UlsZliminexBlocks.BLOCKS.getEntries().stream()
+        .map(RegistryObject::get)  // Get the actual Block from each RegistryObject
+        .filter(block -> {
+            ResourceLocation id = Registry.BLOCK.getKey(block);
+            String blockName = id.getPath();
+            return id != null && id.getNamespace().equals("ulsliminexblocks") && blockName.contains("_stall"); 
+        })
+        .forEach(block -> {
+            tradeList.add(new SimpleTrade(new ItemStack(Items.EMERALD, 2), new ItemStack(block.asItem(), 5)));
         });
 
         // Add these trades to both regular and rare trade categories of the Wandering Trader

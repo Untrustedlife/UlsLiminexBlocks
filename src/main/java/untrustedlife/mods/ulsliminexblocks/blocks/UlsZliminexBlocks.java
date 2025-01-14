@@ -431,6 +431,34 @@ public class UlsZliminexBlocks {
     public static final RegistryObject<Item>  SAND_CARPET_ITEM = UlsZliminexItems.ITEMS.register("sand_carpet", 
         () -> new BlockItem( SAND_CARPET.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
 
+
+    //Stalls and Cubical Seperators
+
+    public static final RegistryObject<Block> WHITE_STALL = BLOCKS.register("white_stall", 
+    () -> new BaseCubicalStall("White Stall",  Material.CLAY, SoundType.CALCITE, 1f, 1f));
+    public static final RegistryObject<Item> WHITE_STALL_ITEM = UlsZliminexItems.ITEMS.register("white_stall", 
+        () -> new BlockItem(WHITE_STALL.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+
+    public static final RegistryObject<Block> BLACK_STALL = BLOCKS.register("black_stall", 
+    () -> new BaseCubicalStall("Black Stall",  Material.CLAY, SoundType.CALCITE, 1f, 1f));
+    public static final RegistryObject<Item> BLACK_STALL_ITEM = UlsZliminexItems.ITEMS.register("black_stall", 
+        () -> new BlockItem(BLACK_STALL.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    
+    public static final RegistryObject<Block> GRAY_STALL = BLOCKS.register("gray_stall", 
+    () -> new BaseCubicalStall("Gray Stall",  Material.CLAY, SoundType.CALCITE, 1f, 1f));
+    public static final RegistryObject<Item> GRAY_STALL_ITEM = UlsZliminexItems.ITEMS.register("gray_stall", 
+        () -> new BlockItem(GRAY_STALL.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    
+    public static final RegistryObject<Block> YELLOW_STALL = BLOCKS.register("yellow_stall", 
+    () -> new BaseCubicalStall("Yellow Stall",  Material.CLAY, SoundType.CALCITE, 1f, 1f));
+    public static final RegistryObject<Item> YELLOW_STALL_ITEM = UlsZliminexItems.ITEMS.register("yellow_stall", 
+        () -> new BlockItem(YELLOW_STALL.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+    
+    public static final RegistryObject<Block> BLUE_STALL = BLOCKS.register("blue_stall", 
+    () -> new BaseCubicalStall("Blue Stall",  Material.CLAY, SoundType.CALCITE, 1f, 1f));
+    public static final RegistryObject<Item> BLUE_STALL_ITEM = UlsZliminexItems.ITEMS.register("blue_stall", 
+        () -> new BlockItem(BLUE_STALL.get(), new Item.Properties().tab(UlsZliminexItems.LIMINEX_TAB)));
+        
     // Register the DeferredRegister to the event bus
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

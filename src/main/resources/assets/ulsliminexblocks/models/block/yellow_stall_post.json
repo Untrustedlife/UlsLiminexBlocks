@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_post",
+  "textures": {
+    "edge": "ulsliminexblocks:block/yellow_stall",
+    "pane": "ulsliminexblocks:block/yellow_stall"
+  }
+}

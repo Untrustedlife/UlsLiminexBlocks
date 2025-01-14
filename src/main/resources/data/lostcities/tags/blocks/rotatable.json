@@ -23,6 +23,12 @@
       "ulsliminexblocks:dirty_broken_glass_pane",
       "ulsliminexblocks:dirty_glass_pane",
       "ulsliminexblocks:dirt_stairs",
-      "ulsliminexblocks:sand_stairs"
+      "ulsliminexblocks:sand_stairs",
+      "ulsliminexblocks:white_stall",
+      "ulsliminexblocks:gray_stall",
+      "ulsliminexblocks:black_stall",
+      "ulsliminexblocks:yellow_stall",
+      "ulsliminexblocks:blue_stall"
+
     ]
   }

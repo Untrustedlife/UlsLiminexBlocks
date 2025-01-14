@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side",
+  "textures": {
+    "edge": "ulsliminexblocks:block/blue_stall",
+    "pane": "ulsliminexblocks:block/blue_stall"
+  }
+}
