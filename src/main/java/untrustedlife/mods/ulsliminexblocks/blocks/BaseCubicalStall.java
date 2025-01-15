@@ -80,7 +80,17 @@ public class BaseCubicalStall  extends IronBarsBlock  {
    }
 
    public boolean skipRendering(BlockState p_54207_, BlockState p_54208_, Direction p_54209_) {
-      return false;
+      if (p_54208_.is(this)) {
+         if (!p_54209_.getAxis().isHorizontal()) {
+            return true;
+         }
+
+         if (p_54207_.getValue(PROPERTY_BY_DIRECTION.get(p_54209_)) && p_54208_.getValue(PROPERTY_BY_DIRECTION.get(p_54209_.getOpposite()))) {
+            return true;
+         }
+      }
+
+      return super.skipRendering(p_54207_, p_54208_, p_54209_);
    }
 
    public void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_54221_) {
