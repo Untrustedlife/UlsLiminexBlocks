@@ -8,8 +8,10 @@ import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -75,7 +77,9 @@ public class UlsZliminex {
 
     public void onSetupEvent(final FMLCommonSetupEvent event) {
         LOGGER.info("Common setup event triggered");
-        Sheets.addWoodType(UlsZliminexWoodTypes.GRAYSCALE);
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
+            Sheets.addWoodType(UlsZliminexWoodTypes.GRAYSCALE);
+        });
     }
 
 }
